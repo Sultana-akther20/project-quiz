@@ -14,11 +14,12 @@ body{
 h1{
     font-size: 7rem;
     color: white;
+    text-align: center;
 }
 .header{
     font-size: 5rem;
     color:black;
-    position: centre;
+    text-align: center;
 }
 img{
     width: 100%;
@@ -29,9 +30,22 @@ img{
 
 .container{
     background: yellow;
+    
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     width: 40%;
-    position: absolute;
+    max-width: 600px;
+    margin: 100px auto 0;
+}
+.div{
+
+}
+.btn{
+    background-color: aqua;
+    color: black;
+    border: 1.5px solid;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
 }
