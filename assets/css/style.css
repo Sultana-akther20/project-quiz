@@ -29,7 +29,7 @@ img{
 }
 
 .container{
-    background: yellow;
+    background: white;
     
     border-radius: 20px;
     padding: 20px;
@@ -42,10 +42,21 @@ img{
 
 }
 .btn{
-    background-color: aqua;
     color: black;
     border: 1.5px solid;
     padding: 5px;
     margin: 5px;
     width: 50%;
+    text-align: left;
 }
+.btn:hover{
+    background-color: khaki;
+}
+.next{
+    background-color: lightblue;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    display: none;
+}
+
