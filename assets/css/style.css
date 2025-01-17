@@ -1,16 +1,37 @@
 *{
     margin: 0;
     padding:0;
-
+    text-align: centre;
 }
 body{
     background-color: antiquewhite;
+    background-position: cover;
+    
 }
 #body{
     background-image: url(images/question-mark-5949781_1280.jpg);
 }
 h1{
+    font-size: 7rem;
+    color: white;
+}
+.header{
     font-size: 5rem;
-    
+    color:black;
+    position: centre;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0;
 }
 
+.container{
+    background: yellow;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    position: absolute;
+}
