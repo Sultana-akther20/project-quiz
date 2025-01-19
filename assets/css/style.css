@@ -6,10 +6,7 @@
 body{
     background-color: antiquewhite;
     background-position: cover;
-    
-}
-#body{
-    background-image: url(images/question-mark-5949781_1280.jpg);
+    font-family: ;
 }
 h1{
     font-size: 7rem;
@@ -38,9 +35,7 @@ img{
     max-width: 600px;
     margin: 100px auto 0;
 }
-.div{
 
-}
 .btn{
     color: black;
     border: 1.5px solid;
@@ -64,11 +59,10 @@ img{
 }
 video{
     width:100%;
-    height:auto;
-    margin-top: 50px;
+    height:50vh;
 }
 nav{
-    background-color: black;
+    
     color:white;
     text-align: center;
     padding: 50px;
@@ -77,9 +71,35 @@ nav{
 nav a {
     color:white;
     text-decoration: none;
+    gap: 50px;
+}
+header#main{
+    background: url(images/question-mark-5949781_1280.jpg);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
+main{
+    padding: 1rem;
+    margin: 1rem;
+}
+#section1{
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+}
 footer{
     text-align: center;
-
+    margin-bottom: 6rem;
+    align-items: center;
+    padding-bottom: 100px;
+}
+form{
+    gap: 40;
 }
