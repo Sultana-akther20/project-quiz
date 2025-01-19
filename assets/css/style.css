@@ -59,4 +59,11 @@ img{
     margin: 5px;
     display: none;
 }
-
+#body-image{
+    background-image: url(assets/css/images/congratulation-photo.jpeg);
+}
+video{
+    width:100%;
+    height:50vh;
+    margin-top: 50px;
+}
