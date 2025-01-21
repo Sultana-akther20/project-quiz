@@ -44,8 +44,11 @@ img{
     width: 50%;
     text-align: left;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background-color: khaki;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 .next{
     background-color: lightblue;
@@ -102,4 +105,11 @@ footer{
 }
 form{
     gap: 40;
+}
+
+.correct{
+    background: green;
+}
+.incorrect{
+    background: red;
 }
