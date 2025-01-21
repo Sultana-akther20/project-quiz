@@ -1,5 +1,6 @@
+//used array to set the question and answer
 const quizs=[{
-    question: "What is the capital of city of England?",
+    question: "What is the capital city of England?",
     answers: [
         { text: "London", correct: true},
         { text: "Barmingham", correct: false},
@@ -53,14 +54,16 @@ const quizs=[{
     ]        
 }
 ];
-
+//connecting javascript to html
 const questionElement = document.getElementById("question");
 const answerElement = document.getElementById("div");
 const nextElement = document.getElementsByClassName("next")[0];
 
+//set the variable to start from 0
 let currentQuestionIndex = 0;
 let score = 0;
 
+//function for starting quiz from beginning and call show function to show first question
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
@@ -68,6 +71,7 @@ function startQuiz(){
     showQuestion();
 }
 
+//function for showing question
 function showQuestion(){
     resetState();
     let currentQuestion = quizs[currentQuestionIndex];

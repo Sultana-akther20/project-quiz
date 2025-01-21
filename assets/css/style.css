@@ -66,15 +66,18 @@ video{
 }
 nav{
     
-    color:white;
+    color:black;
     text-align: center;
     padding: 50px;
     margin: 50px;
 }
 nav a {
-    color:white;
+    color:black;
     text-decoration: none;
     gap: 50px;
+}
+.nav{
+
 }
 header#main{
     background: url(images/question-mark-5949781_1280.jpg);
