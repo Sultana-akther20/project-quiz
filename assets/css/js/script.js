@@ -63,13 +63,23 @@ const nextElement = document.getElementsByClassName("next")[0];
 let currentIndex = 0;
 let score = 0;
 
+function randomQuestion(){
+    for(let i = quizs.length - 1;
+        i > 0; i--){
+            const j =Math.floor(Math.random() * (i + 1));
+            [quizs[i], quizs[j]] =[quizs[j], quizs[i]];
+        }
+}
 //function for starting quiz from beginning and call show function to show first question
 function startQuiz(){
+    randomQuestion();
     currentIndex = 0;
     score = 0;
     nextElement.innerHTML="Next";
     showQuestion();
 }
+
+
 
 //function for showing question
 function showQuestion(){
@@ -119,7 +129,7 @@ function selectAnswer(e){
 
     function showScore(){
         resetState();
-        questionElement.innerHTML = `your score is ${score} out of ${quizs.length}!`;
+        questionElement.innerHTML = `you scored ${score} out of ${quizs.length}!`;
         nextElement.innerHTML="Restart The Quiz";
         nextElement.style.display ="block";
     }
