@@ -1,5 +1,5 @@
 //used array to set the question and answer
-const quizs=[{
+const quiz=[{
     question: "What is the capital city of England?",
     answers: [
         { text: "London", correct: true},
@@ -64,10 +64,10 @@ let currentIndex = 0;
 let score = 0;
 
 function randomQuestion(){
-    for(let i = quizs.length - 1;
+    for(let i = quiz.length - 1;
         i > 0; i--){
             const j =Math.floor(Math.random() * (i + 1));
-            [quizs[i], quizs[j]] =[quizs[j], quizs[i]];
+            [quiz[i], quiz[j]] =[quiz[j], quiz[i]];
         }
 }
 //function for starting quiz from beginning and call show function to show first question
@@ -84,7 +84,7 @@ function startQuiz(){
 //function for showing question
 function showQuestion(){
     resetState();
-    let currentQuestion = quizs[currentIndex];
+    let currentQuestion = quiz[currentIndex];
     let questionNo = currentIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -129,13 +129,13 @@ function selectAnswer(e){
 
     function showScore(){
         resetState();
-        questionElement.innerHTML = `you scored ${score} out of ${quizs.length}!`;
+        questionElement.innerHTML = `you scored ${score} out of ${quiz.length}!`;
         nextElement.innerHTML="Restart The Quiz";
         nextElement.style.display ="block";
     }
     function handleNextButton(){
         currentIndex++;
-        if(currentIndex < quizs.length){
+        if(currentIndex < quiz.length){
             showQuestion();
         }else{
             showScore();
@@ -143,7 +143,7 @@ function selectAnswer(e){
         }
     
     nextElement.addEventListener("click", ()=>{
-        if(currentIndex < quizs.length){
+        if(currentIndex < quiz.length){
             handleNextButton();
         }else{
 startQuiz();
