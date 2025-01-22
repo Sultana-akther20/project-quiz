@@ -76,9 +76,26 @@ nav a {
     text-decoration: none;
     gap: 50px;
 }
-.nav{
 
-}
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    margin-top: 0;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    .nav a:hover{
+        color: coral;
+    }
 header#main{
     background: url(images/question-mark-5949781_1280.jpg);
     display: flex;
