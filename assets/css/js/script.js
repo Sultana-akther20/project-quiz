@@ -52,8 +52,46 @@ const quiz=[{
         { text: "Wales", correct: false},
         { text: "Scotland", correct: false},
     ]        
-}
+},
+{
+question: "What is the name of the corrent king?",
+answers: [
+    { text: "King George V", correct: false},
+    { text: "King George VI", correct: false},
+    { text: "King Charles III", correct: true},
+    { text: "King Edward VIII", correct: false},
+]  
+},
+{
+    question: "When queen Elizabeth II died?",
+    answers: [
+        { text: "2000", correct: false},
+        { text: "1952", correct: false},
+        { text: "1990", correct: false},
+        { text: "2022", correct: true},
+    ]        
+},
+{
+question: "How many countries are with uk?",
+answers: [
+    { text: "3", correct: false},
+    { text: "4", correct: true},
+    { text: "6", correct: false},
+    { text: "5", correct: false},
+]
+},
+{
+    question: "How many years did Queen Elizabeth rule?",
+    answers: [
+        { text: "Over 70 years", correct: true},
+        { text: "71 years", correct: false},
+        { text: "60 years", correct: false},
+        { text: "over 65years", correct: false}, 
+    ] 
+}   
+        
 ];
+
 //connecting javascript to html
 const questionElement = document.getElementById("question");
 const answerElement = document.getElementById("div");
