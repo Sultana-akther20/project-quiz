@@ -10,11 +10,13 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
+    padding: 0;
 }
 h1{
     font-size: 7rem;
     color: white;
     text-align: center;
+    
 }
 .header{
     font-size: 5rem;
@@ -42,12 +44,15 @@ img{
 }
 
 .btn{
+    display: block;
     color: black;
     border: 1.5px solid;
     padding: 5px;
     margin: 5px;
     width: 50%;
     text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .btn:hover:not([disabled]){
     background-color: khaki;
@@ -62,9 +67,7 @@ img{
     margin: 5px;
     display: none;
 }
-#body-image{
-    background-image: url(assets/css/images/congratulation-photo.jpeg);
-}
+
 video{
     width:100%;
     height:50vh;
@@ -89,6 +92,7 @@ nav a {
 }
 nav a:hover{
     background-color: aliceblue;
+    border-radius: 10px;
 }
 
 .nav{
@@ -120,11 +124,16 @@ header#main{
     align-items: center;
     height: 100vh;
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main{
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #section1{
     border: 2px solid black;
@@ -136,7 +145,7 @@ main{
 }
 footer{
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     align-items: center;
     padding-bottom: 100px;
     
@@ -151,4 +160,83 @@ form{
 }
 .incorrect{
     background: red;
+}
+/*media query for mobile*/
+@media screen and (max-width:768px) {
+    h1 {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .nav{
+        justify-content: center;
+    display: flex;
+    gap:15px;
+
+    }
+    .nav a{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    nav{
+       margin:10px; 
+
+    }
+    nav a{
+        font-size: 1em;
+}
+    .header{
+font-size: 2rem;
+margin-bottom: 50px;
+    }
+    #question{
+        margin-top: 50px;
+    }
+    .container{
+        width: 95%;
+        padding: 1rem;
+    }
+
+}
+
+/*media query for tablets and larger items , hides elements, set position  relative, remove box shadow,set swidth to fit content, set right padding*/
+@media screen and (min-width:768px) {
+    .one {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+
+    /*style id link, display in flex container*/
+    #link {
+        display: flex;
+    }
+
+    /*style for list inside the id link, set padding left and remove list style*/
+    #link>li {
+        padding-left: 1rem;
+        list-style: none;
+    }
+
+    /*style for id check-label, hides elements*/
+    label[for="check-label"] {
+        display: none;
+    }
+
+    .div-one {
+        font-size: 1.2rem;
+        width: 50%;
+        height: 80px;
+    }
+}
+
+/*media query for laptop and up*/
+@media screen and (min-width: 992px) {
+    #link li a:hover {
+        background-color: yellow;
+    }
+
 }
