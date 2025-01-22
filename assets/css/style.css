@@ -22,7 +22,7 @@ h1{
     font-size: 5rem;
     color:black;
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem ;
     padding: 3rem;
 }
 img{
@@ -40,7 +40,7 @@ img{
     text-align: center;
     width: 40%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 1rem auto;
 }
 
 .btn{
@@ -74,9 +74,8 @@ video{
 }
 nav{
     color:blue;
-    position: fixed;
     width: 100%;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
     justify-content: center;
     align-items: center;
@@ -208,18 +207,12 @@ margin-bottom: 50px;
 }
 
 /*media query for tablets and larger items , hides elements, set position  relative, remove box shadow,set swidth to fit content, set right padding*/
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (min-width: 992px)  {
     header#main{
-        height: 90vh;
+    
         background-position: center;
         background-size: cover;
     }
 }
 
-/*media query for laptop and up*/
-@media screen and (min-width: 992px) {
-    #link li a:hover {
-        background-color: yellow;
-    }
 
-}

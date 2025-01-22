@@ -60,12 +60,12 @@ const answerElement = document.getElementById("div");
 const nextElement = document.getElementsByClassName("next")[0];
 
 //set the variable to start from 0
-let currentQuestionIndex = 0;
+let currentIndex = 0;
 let score = 0;
 
 //function for starting quiz from beginning and call show function to show first question
 function startQuiz(){
-    currentQuestionIndex = 0;
+    currentIndex = 0;
     score = 0;
     nextElement.innerHTML="Next";
     showQuestion();
@@ -74,8 +74,8 @@ function startQuiz(){
 //function for showing question
 function showQuestion(){
     resetState();
-    let currentQuestion = quizs[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
+    let currentQuestion = quizs[currentIndex];
+    let questionNo = currentIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach((answer) => {
@@ -119,13 +119,13 @@ function selectAnswer(e){
 
     function showScore(){
         resetState();
-        questionElement.innerHTML = `your score ${score} out of ${quizs.length}!`;
-        nextElement.innerHTML="Play Again";
+        questionElement.innerHTML = `your score is ${score} out of ${quizs.length}!`;
+        nextElement.innerHTML="Restart The Quiz";
         nextElement.style.display ="block";
     }
     function handleNextButton(){
-        currentQuestionIndex++;
-        if(currentQuestionIndex < quizs.length){
+        currentIndex++;
+        if(currentIndex < quizs.length){
             showQuestion();
         }else{
             showScore();
@@ -133,7 +133,7 @@ function selectAnswer(e){
         }
     
     nextElement.addEventListener("click", ()=>{
-        if(currentQuestionIndex < quizs.length){
+        if(currentIndex < quizs.length){
             handleNextButton();
         }else{
 startQuiz();
