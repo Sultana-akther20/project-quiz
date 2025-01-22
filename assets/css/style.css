@@ -7,6 +7,9 @@ body{
     background-color: antiquewhite;
     background-position: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 h1{
     font-size: 7rem;
@@ -17,6 +20,8 @@ h1{
     font-size: 5rem;
     color:black;
     text-align: center;
+    margin-top: 3rem;
+    padding: 3rem;
 }
 img{
     width: 100%;
@@ -65,16 +70,25 @@ video{
     height:50vh;
 }
 nav{
-    
-    color:black;
-    text-align: center;
-    padding: 50px;
-    margin: 50px;
+    color:blue;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+
 }
 nav a {
-    color:black;
+    color:blue;
     text-decoration: none;
-    gap: 50px;
+    font-size: 2rem;
+    
+}
+nav a:hover{
+    background-color: aliceblue;
 }
 
 .nav{
