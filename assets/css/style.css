@@ -196,6 +196,10 @@ margin-bottom: 50px;
         width: 95%;
         padding: 1rem;
     }
+    .btn{
+        width: 50%;
+        font-size: 1rem;
+    }
 
 }
 
