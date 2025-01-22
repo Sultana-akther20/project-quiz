@@ -200,40 +200,19 @@ margin-bottom: 50px;
         width: 50%;
         font-size: 1rem;
     }
-
+    header#main{
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 /*media query for tablets and larger items , hides elements, set position  relative, remove box shadow,set swidth to fit content, set right padding*/
 @media screen and (min-width:768px) {
-    .one {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-
-    /*style id link, display in flex container*/
-    #link {
-        display: flex;
-    }
-
-    /*style for list inside the id link, set padding left and remove list style*/
-    #link>li {
-        padding-left: 1rem;
-        list-style: none;
-    }
-
-    /*style for id check-label, hides elements*/
-    label[for="check-label"] {
-        display: none;
-    }
-
-    .div-one {
-        font-size: 1.2rem;
-        width: 50%;
-        height: 80px;
+    header#main{
+        height: 90vh;
+        background-position: center;
+        background-size: cover;
     }
 }
 
