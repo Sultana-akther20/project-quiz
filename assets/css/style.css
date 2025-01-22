@@ -6,7 +6,7 @@
 body{
     background-color: antiquewhite;
     background-position: cover;
-    font-family: ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1{
     font-size: 7rem;
@@ -84,7 +84,10 @@ nav a {
     height: 2.5rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+
     z-index: 1000;
     margin-top: 0;
     }
@@ -122,6 +125,7 @@ footer{
     margin-bottom: 6rem;
     align-items: center;
     padding-bottom: 100px;
+    
 }
 form{
     gap: 40;
