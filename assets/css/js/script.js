@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function(){
+    const form = document.getElementById("form");
+    form.addEventListener("submit", formSubmit);
+
+    function formSubmit(e){
+        e.preventDefault();
+        const userName = document.getElementById("username").value;
+        if (userName){
+            alert(`Welcome ${userName} for starting the quiz about UK.`);
+            window.location.href="quiz.html";
+        }
+    } 
+        
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function(){
 //used array to set the question and answer
 const quiz=[{
     question: "What is the capital city of England?",
@@ -95,7 +114,7 @@ answers: [
 //connecting javascript to html
 const questionElement = document.getElementById("question");
 const answerElement = document.getElementById("div");
-const nextElement = document.getElementsByClassName("next")[0];
+const nextElement = document.getElementById("next");
 
 //set the variable to start from 0
 let currentIndex = 0;
@@ -189,3 +208,8 @@ startQuiz();
         
     });
 startQuiz();
+
+    });
+
+
+    module.exports =  ;

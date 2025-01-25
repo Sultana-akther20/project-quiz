@@ -150,8 +150,15 @@ footer{
     
     
 }
-form{
-    gap: 40;
+
+label,
+input,
+button{
+    display: block;
+    margin-top: 5px;
+}
+label{
+    text-align: left;
 }
 
 .correct{
