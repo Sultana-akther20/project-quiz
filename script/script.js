@@ -219,4 +219,4 @@ startQuiz();
   
 
 //for testinhg
-   module.exports = { form };
+   module.exports = {randomQuestion, startQuiz, showQuestion, resetFunction, selectAnswer, showScore,handleNextButton,};
