@@ -1,22 +1,28 @@
 document.addEventListener("DOMContentLoaded", function(){
+  const currentPage = window.location.pathname;
+  if(currentPage.includes("index.html")){
+
+  
     const form = document.getElementById("form");
-    form.addEventListener("submit", formSubmit);
+    if(form){
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
 
-    function formSubmit(e){
-        e.preventDefault();
-        const userName = document.getElementById("username").value;
-        if (userName){
-            alert(`Welcome ${userName} for starting the quiz about UK.`);
-            window.location.href="quiz.html";
-        }
-    } 
         
+    
+   //form.addEventListener("submit", formSubmit);
+//act on submition behavior, check the typed username and display a wellcome message to start the quiz
+   //function formSubmit(e){
+      // e.preventDefault();
+       const userName = document.getElementById("username").value;
+       if (userName){
+           alert(`Welcome ${userName} to the quiz about UK.`);
+           window.location.href="quiz.html";
+       }
     });
-
-
-
-
-    document.addEventListener("DOMContentLoaded", function(){
+}
+  }
+if(currentPage.includes("quiz.html")){
 //used array to set the question and answer
 const quiz=[{
     question: "What is the capital city of England?",
@@ -116,10 +122,11 @@ const questionElement = document.getElementById("question");
 const answerElement = document.getElementById("div");
 const nextElement = document.getElementById("next");
 
-//set the variable to start from 0
+//set the variables to start from 0
 let currentIndex = 0;
 let score = 0;
 
+//randomise the questions
 function randomQuestion(){
     for(let i = quiz.length - 1;
         i > 0; i--){
@@ -127,7 +134,7 @@ function randomQuestion(){
             [quiz[i], quiz[j]] =[quiz[j], quiz[i]];
         }
 }
-//function for starting quiz from beginning and call show function to show first question
+//function for starting quiz from beginning and call show function to show first question and set the score and sets the next button
 function startQuiz(){
     randomQuestion();
     currentIndex = 0;
@@ -138,18 +145,19 @@ function startQuiz(){
 
 
 
-//function for showing question
+//function for showing question, reset the previous state and display the question
 function showQuestion(){
-    resetState();
+    resetFunction();
     let currentQuestion = quiz[currentIndex];
     let questionNo = currentIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
+    //arraw function create a button for each answer and sets to the answer text.
     currentQuestion.answers.forEach((answer) => {
         const button = document.createElement("button");
         button.innerHTML=answer.text;
         button.classList.add("btn");
-        
+        //append the button and custom data for correct answer and handle answer selection dynamically
         answerElement.appendChild(button);
         if(answer.correct){
             button.dataset.correct=answer.correct;
@@ -157,14 +165,14 @@ function showQuestion(){
         button.addEventListener("click", selectAnswer);
     });
 }
-
-function resetState(){
+//restFunction clears the state for next question
+function resetFunction(){
     nextElement.style.display = "none";
     while(answerElement.firstChild){
         answerElement.removeChild(answerElement.firstChild);
     }
 }
-
+//this function check the answer is true or false and set the colour as sets and increment the scores
 function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -174,6 +182,7 @@ function selectAnswer(e){
     }else{
         selectedBtn.classList.add("incorrect");
     }
+    //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
     Array.from(answerElement.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
@@ -183,13 +192,14 @@ function selectAnswer(e){
     });
     nextElement.style.display = "block";
     }
-
+//showScore showes the final score in a message after clearing the state 
     function showScore(){
-        resetState();
+        resetFunction();
         questionElement.innerHTML = `you scored ${score} out of ${quiz.length}!`;
         nextElement.innerHTML="Restart The Quiz";
         nextElement.style.display ="block";
     }
+    //this function moves to the next question and if there are no question end the quiz and show score
     function handleNextButton(){
         currentIndex++;
         if(currentIndex < quiz.length){
@@ -198,18 +208,20 @@ function selectAnswer(e){
             showScore();
         }
         }
-    
+    //set event listener to next button to manage its behavior
     nextElement.addEventListener("click", ()=>{
         if(currentIndex < quiz.length){
             handleNextButton();
         }else{
 startQuiz();
         }
+    });
         
-    });
+  //start the quiz after script is loaded  
 startQuiz();
-
+}
     });
+  
 
-
-    module.exports =  ;
+//for testinhg
+   module.exports = { formSubmit } ;

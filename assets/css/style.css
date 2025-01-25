@@ -117,7 +117,7 @@ nav a:hover{
         color: coral;
     }
 header#main{
-    background: url(images/question-mark-5949781_1280.jpg);
+    background: url(../assets/question-mark-5949781_1280.jpg);
     display: flex;
     text-align: center;
     align-items: center;

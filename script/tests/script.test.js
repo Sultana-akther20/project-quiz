@@ -1,7 +1,6 @@
-const { describe } = require("yargs");
+
 const {formSubmit}= require("../script");
-const { test } = require("picomatch");
-const expectExport = require("expect");
+
 
 beforeAll(() => {
     let fs =require("fs");
@@ -11,9 +10,9 @@ beforeAll(() => {
     document.close();
 });
 
-describe("form contain correct keys", () => {
-    test("UserName key exists", () => {
-    expectExport("UserName", in form).toBe(true);
+describe("formSubmit contain correct keys", () => {
+    test("username key exists", () => {
+    expectExport("username" in formSubmit).toBe(true);
 
     });
 });
