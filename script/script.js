@@ -2,18 +2,13 @@ document.addEventListener("DOMContentLoaded", function(){
   const currentPage = window.location.pathname;
   if(currentPage.includes("index.html")){
 
-  
+  //act on submition behavior, check the typed username and display a wellcome message to start the quiz
     const form = document.getElementById("form");
     if(form){
         form.addEventListener("submit", function(e){
             e.preventDefault();
 
-        
-    
-   //form.addEventListener("submit", formSubmit);
-//act on submition behavior, check the typed username and display a wellcome message to start the quiz
-   //function formSubmit(e){
-      // e.preventDefault();
+   
        const userName = document.getElementById("username").value;
        if (userName){
            alert(`Welcome ${userName} to the quiz about UK.`);
@@ -224,4 +219,4 @@ startQuiz();
   
 
 //for testinhg
-   module.exports = { formSubmit } ;
+   module.exports = { form } ;
