@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: antiquewhite;
     background-position: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,29 +13,32 @@ body{
     margin: 0;
     padding: 0;
 }
-h1{
+
+h1 {
     font-size: 7rem;
     color: white;
     text-align: center;
-    
+
 }
-.header{
+
+.header {
     font-size: 5rem;
-    color:black;
+    color: black;
     text-align: center;
-    margin: 3rem ;
+    margin: 3rem;
     padding: 3rem;
 }
-img{
+
+img {
     width: 100%;
     height: auto;
     display: flex;
     padding: 0;
 }
 
-.container{
+.container {
     background: white;
-    
+
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -43,7 +47,7 @@ img{
     margin: 1rem auto;
 }
 
-.btn{
+.btn {
     display: block;
     color: black;
     border: 1.5px solid;
@@ -54,13 +58,16 @@ img{
     font-size: 1rem;
     cursor: pointer;
 }
-.btn:hover:not([disabled]){
+
+.btn:hover:not([disabled]) {
     background-color: khaki;
 }
-.btn:disabled{
+
+.btn:disabled {
     cursor: no-drop;
 }
-.next{
+
+.next {
     background-color: lightblue;
     width: 100px;
     padding: 5px;
@@ -68,12 +75,13 @@ img{
     display: none;
 }
 
-video{
-    width:100%;
-    height:50vh;
+video {
+    width: 100%;
+    height: 50vh;
 }
-nav{
-    color:blue;
+
+nav {
+    color: blue;
     width: 100%;
     padding: 1rem 0;
     margin: 0;
@@ -83,18 +91,20 @@ nav{
     gap: 30px;
 
 }
+
 nav a {
-    color:blue;
+    color: blue;
     text-decoration: none;
     font-size: 2rem;
-    
+
 }
-nav a:hover{
+
+nav a:hover {
     background-color: aliceblue;
     border-radius: 10px;
 }
 
-.nav{
+.nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -107,16 +117,19 @@ nav a:hover{
 
     z-index: 1000;
     margin-top: 0;
-    }
-    .nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 2rem;
-    }
-    .nav a:hover{
-        color: coral;
-    }
-header#main{
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav a:hover {
+    color: coral;
+}
+
+header#main {
     background: url(../images/question-mark-5949781_1280.jpg);
     display: flex;
     text-align: center;
@@ -127,14 +140,15 @@ header#main{
     background-repeat: no-repeat;
 }
 
-main{
+main {
     padding: 1rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#section1{
+
+#section1 {
     border: 2px solid black;
     text-align: center;
     align-items: center;
@@ -142,31 +156,35 @@ main{
     margin: 0;
     margin-bottom: 10px;
 }
-footer{
+
+footer {
     text-align: center;
     margin-bottom: 3rem;
     align-items: center;
     padding-bottom: 100px;
-    
-    
+
+
 }
 
 label,
 input,
-button{
+button {
     display: block;
     margin-top: 5px;
 }
-label{
+
+label {
     text-align: left;
 }
 
-.correct{
+.correct {
     background: green;
 }
-.incorrect{
+
+.incorrect {
     background: red;
 }
+
 /*media query for mobile*/
 @media screen and (max-width:768px) {
     h1 {
@@ -174,39 +192,47 @@ label{
         font-size: 2rem;
     }
 
-    .nav{
+    .nav {
         justify-content: center;
-    display: flex;
-    gap:15px;
+        display: flex;
+        gap: 15px;
 
     }
-    .nav a{
+
+    .nav a {
         font-size: 1em;
         padding: 0.5em;
     }
-    nav{
-       margin:10px; 
+
+    nav {
+        margin: 10px;
 
     }
-    nav a{
+
+    nav a {
         font-size: 1em;
-}
-    .header{
-font-size: 2rem;
-margin-bottom: 50px;
     }
-    #question{
+
+    .header {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    #question {
         margin-top: 50px;
     }
-    .container{
+
+    .container {
         width: 95%;
         padding: 1rem;
     }
-    .btn{
+
+    .btn {
         width: 50%;
         font-size: 1rem;
     }
-    header#main{
+
+    header#main {
         height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
@@ -214,12 +240,10 @@ margin-bottom: 50px;
 }
 
 /*media query for tablets and larger items , hides elements, set position  relative, remove box shadow,set swidth to fit content, set right padding*/
-@media screen and (min-width:768px) and (min-width: 992px)  {
-    header#main{
-    
+@media screen and (min-width:768px) and (min-width: 992px) {
+    header#main {
+
         background-position: center;
         background-size: cover;
     }
 }
-
-
