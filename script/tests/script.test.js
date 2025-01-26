@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 
+const { describe } = require("yargs");
 const {randomQuestion, startQuiz, showQuestion, resetFunction, selectAnswer, showScore,handleNextButton,}= require("../script.js");
 
 beforeAll(() => {
@@ -20,7 +21,8 @@ describe("Quiz Tests", () => {
         answerElement=document.getElementById("div");
         nextElement=document.getElementById("next");
     }) 
-    test("randomQuestion for the quiz array", () => {
+    describe("randomQuestion function", () => {
+    test("shuffles the quiz array", () => {
         const quiz=[{ question: 'Q1', answers:
             [{text:'A1', correct:true}]},
             { question: 'Q2', answers:[{ text:'A2', correct: false}]},
@@ -28,6 +30,7 @@ describe("Quiz Tests", () => {
         const randomiseQuiz=[...quiz];
         randomQuestion(randomiseQuiz);
         expect(randomiseQuiz).not.toEqual(quiz);
+        expect(randomiseQuiz).toHaveLength(quiz.length);
 
     });
 });

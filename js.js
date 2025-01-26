@@ -218,7 +218,14 @@ document.addEventListener("DOMContentLoaded", function(){
   if(currentPage.includes("quiz.html")){
 }
     });
-  
+    describe("Quiz Tests", () => {
+        let questionElement, answerElement, nextElement;
+        beforeEach(() => {
+            document.body.innerHTML=`<div id="question"></div> <div id="div"></div> <button id="next"></button>`;
+            questionElement=document.getElementById("question");
+            answerElement=document.getElementById("div");
+            nextElement=document.getElementById("next");
+        }) 
 
 //for testinhg
-   module.exports = {randomQuestion, startQuiz, showQuestion, resetFunction, selectAnswer, showScore,handleNextButton,};
+   module.exports = {randomQuestion};

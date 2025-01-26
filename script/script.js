@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function(){
+    const currentPage = window.location.pathname;
+    if(currentPage.includes("index.html")){
+  
+    //act on submition behavior, check the typed username and display a wellcome message to start the quiz
+      const form = document.getElementById("form");
+      if(form){
+          form.addEventListener("submit", function(e){
+              e.preventDefault();
+  
+     
+         const userName = document.getElementById("username").value;
+         if (userName){
+             alert(`Welcome ${userName} to the quiz about UK.`);
+             window.location.href="quiz.html";
+         }
+      });
+  }
+    }
+  if(currentPage.includes("quiz.html")){
 
 //used array to set the question and answer
 const quiz=[{
@@ -103,7 +123,7 @@ let currentIndex = 0;
 let score = 0;
 
 //randomise the questions
-function randomQuestion(quiz){
+function randomQuestion(){
     for(let i = quiz.length - 1;
         i > 0; i--){
             const j =Math.floor(Math.random() * (i + 1));
@@ -196,28 +216,10 @@ startQuiz();
   //start the quiz after script is loaded  
 startQuiz();
 
-document.addEventListener("DOMContentLoaded", function(){
-    const currentPage = window.location.pathname;
-    if(currentPage.includes("index.html")){
-  
-    //act on submition behavior, check the typed username and display a wellcome message to start the quiz
-      const form = document.getElementById("form");
-      if(form){
-          form.addEventListener("submit", function(e){
-              e.preventDefault();
-  
-     
-         const userName = document.getElementById("username").value;
-         if (userName){
-             alert(`Welcome ${userName} to the quiz about UK.`);
-             window.location.href="quiz.html";
-         }
-      });
-  }
-    }
-  if(currentPage.includes("quiz.html")){
+
 }
     });
+    
   
 
 //for testinhg
