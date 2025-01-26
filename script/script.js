@@ -122,7 +122,7 @@ let currentIndex = 0;
 let score = 0;
 
 //randomise the questions
-function randomQuestion(){
+function randomQuestion(quiz){
     for(let i = quiz.length - 1;
         i > 0; i--){
             const j =Math.floor(Math.random() * (i + 1));

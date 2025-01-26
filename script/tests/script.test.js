@@ -1,8 +1,6 @@
 
-const { removeLinesBeforeExternalMatcherTrap } = require("jest-snapshot/build/utils.js");
+const expectExport = require("expect");
 const {randomQuestion, startQuiz, showQuestion, resetFunction, selectAnswer, showScore,handleNextButton,}= require("../script.js");
-const { before } = require("lodash");
-
 
 beforeAll(() => {
     let fs =require("fs");
@@ -21,8 +19,13 @@ describe("Quiz Tests", () => {
         nextElement=document.getElementById("next");
     }) 
     test("randomQuestion for the quiz array", () => {
-        const randomise=
-    expectExport("randomQuestion" in randomise).toBe(true);
+        const quiz=[{ question: 'Q1', answers:
+            [{text:'A1', correct:true}]},
+            { question: 'Q2', answers:[{ text:'A2', correct: false}]},
+        ];
+        const randomiseQuiz=[...quiz];
+        randomQuestion(randomiseQuiz);
+        expectExport(randomiseQuiz).not.toEqual(quiz);
 
     });
 });
