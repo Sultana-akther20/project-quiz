@@ -1,5 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
 
-const expectExport = require("expect");
 const {randomQuestion, startQuiz, showQuestion, resetFunction, selectAnswer, showScore,handleNextButton,}= require("../script.js");
 
 beforeAll(() => {
@@ -25,7 +27,7 @@ describe("Quiz Tests", () => {
         ];
         const randomiseQuiz=[...quiz];
         randomQuestion(randomiseQuiz);
-        expectExport(randomiseQuiz).not.toEqual(quiz);
+        expect(randomiseQuiz).not.toEqual(quiz);
 
     });
 });
