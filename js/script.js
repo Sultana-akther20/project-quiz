@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    console.log("document is ready");
     const currentPage = window.location.pathname;
     if(currentPage.includes("index.html")){
   
@@ -18,6 +19,7 @@ $(document).ready(function(){
   }
     }
   if(currentPage.includes("quiz.html")){
+    console.log("quiz script is running");
 
 //used array to set the question and answer
 const quiz=[{
@@ -123,102 +125,92 @@ let currentIndex = 0;
 let score = 0;
 
 //randomise the questions
-function randomQuestion(){
-    for(let i = quiz.length - 1;
-        i > 0; i--){
-            const j =Math.floor(Math.random() * (i + 1));
-            [quiz[i], quiz[j]] =[quiz[j], quiz[i]];
-        }
-}
+const randomQuestion = () => {
+    quiz.sort(() => Math.random() - 0.5);
+        };
+
 //function for starting quiz from beginning and call show function to show first question and set the score and sets the next button
-function startQuiz(){
+const startQuiz = () => {
     randomQuestion();
     currentIndex = 0;
     score = 0;
-    nextElement.innerHTML="Next";
+    $nextElement.text("Next").hide();
     showQuestion();
-}
+};
 
 
 
 //function for showing question, reset the previous state and display the question
-function showQuestion(){
+const showQuestion = () => {
     resetFunction();
-    let currentQuestion = quiz[currentIndex];
-    let questionNo = currentIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    const currentQuestion = quiz[currentIndex];
+    const questionNo = currentIndex + 1;
+    $questionElement.text(`${questionNo}. ${currentQuestion.question}`);
 
     //arraw function create a button for each answer and sets to the answer text.
     currentQuestion.answers.forEach((answer) => {
-        const button = document.createElement("button");
-        button.innerHTML=answer.text;
-        button.classList.add("btn");
+        const $button = $("<button>")
+        .addClass("btn")
+        .text(answer.text)
+        .data("correct", answer.correct)
+        .on("click", selectAnswer);
         //append the button and custom data for correct answer and handle answer selection dynamically
-        answerElement.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct=answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
+        $answerElement.append($button);
     });
-}
+};
+    
 //restFunction clears the state for next question
-function resetFunction(){
-    nextElement.style.display = "none";
-    while(answerElement.firstChild){
-        answerElement.removeChild(answerElement.firstChild);
-    }
-}
+const resetFunction = () => {
+    $nextElement.hide();
+    $answerElement.empty();
+    };
+
 //this function check the answer is true or false and set the colour as sets and increment the scores
-function selectAnswer(e){
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
+const selectAnswer = (e) => {
+    const $selectedBtn = $(e.target);
+    const isCorrect = $selectedBtn.data("correct");
     if(isCorrect){
-        selectedBtn.classList.add("correct");
+        $selectedBtn.addClass("correct");
         score++;
     }else{
-        selectedBtn.classList.add("incorrect");
+        $selectedBtn.addClass("incorrect");
     }
     //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
-    Array.from(answerElement.children).forEach(button => {
-        if(button.dataset.correct === "true"){
-            button.classList.add("correct");
+    $answerElement.children().each(function() {
+        const $btn = $(this);
+        if($btn.data("correct")){
+            $btn.addClass("correct");
 
         }
-        button.disabled = true;
+        $btn.prop("disabled", true);
     });
-    nextElement.style.display = "block";
-    }
+    $nextElement.show();
+    };
 //showScore showes the final score in a message after clearing the state 
-    function showScore(){
+    const showScore = () => {
         resetFunction();
-        questionElement.innerHTML = `you scored ${score} out of ${quiz.length}!`;
-        nextElement.innerHTML="Restart The Quiz";
-        nextElement.style.display ="block";
-    }
-    //this function moves to the next question and if there are no question end the quiz and show score
-    function handleNextButton(){
-        currentIndex++;
-        if(currentIndex < quiz.length){
-            showQuestion();
-        }else{
-            showScore();
-        }
-        }
-    //set event listener to next button to manage its behavior
-    nextElement.addEventListener("click", ()=>{
-        if(currentIndex < quiz.length){
-            handleNextButton();
-        }else{
-startQuiz();
-        }
+        $questionElement.text(`you scored ${score} out of ${quiz.length}!`);
+        $nextElement.text("Restart The Quiz").show();
+    };
+        $nextElement.on("click", function(){
+            currentIndex++;
+            if (currentIndex < quiz.length){
+                showQuestion();
+            }else{
+                showScore();
+            }
+            
     });
+    startQuiz();
+}
+});
+    
         
   //start the quiz after script is loaded  
-startQuiz();
 
 
-}
-    });
+
+
     
   
 
