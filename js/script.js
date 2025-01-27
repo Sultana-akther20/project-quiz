@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", function(){
+$(document).ready(function(){
     const currentPage = window.location.pathname;
     if(currentPage.includes("index.html")){
   
     //act on submition behavior, check the typed username and display a wellcome message to start the quiz
-      const form = document.getElementById("form");
-      if(form){
-          form.addEventListener("submit", function(e){
+      const $form = $("#form");
+      if($form.length){
+          $form.on("submit", function(e){
               e.preventDefault();
   
      
-         const userName = document.getElementById("username").value;
+         const userName = $("#username").val();
          if (userName){
              alert(`Welcome ${userName} to the quiz about UK.`);
              window.location.href="quiz.html";
