@@ -114,9 +114,9 @@ answers: [
 ];
 
 //connecting javascript to html
-const questionElement = document.getElementById("question");
-const answerElement = document.getElementById("div");
-const nextElement = document.getElementById("next");
+const $questionElement = $("#question");
+const $answerElement = $("#div");
+const $nextElement = $("#next");
 
 //set the variables to start from 0
 let currentIndex = 0;
