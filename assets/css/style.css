@@ -125,9 +125,6 @@ nav a:hover {
     font-size: 2rem;
 }
 
-.nav a:hover {
-    color: coral;
-}
 
 header#main {
     background: url(../images/question-mark-5949781_1280.jpg);
