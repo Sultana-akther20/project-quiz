@@ -108,7 +108,7 @@ nav a:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 5rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     justify-content: center;
@@ -171,6 +171,7 @@ input,
 button {
     display: block;
     margin-top: 5px;
+    align-items: left;
 }
 
 label {
