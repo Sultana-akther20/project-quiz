@@ -82,9 +82,9 @@ I have deployed from github main branch.
 Test no.1
 
 Description of the test: Make a form for username and submit buttons and it’ll indicate require.
-Expected Outcome: Should show require username, if empty button submit.
-Actual Outcome: Works as expected
-Error: no
+Expected Outcome: Should show require username, if tehy submit empty button.
+Actual Outcome: Works as expected.
+Error: no.
 
 Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/809b95ff-0071-44dd-b043-d19e0c1aaee5)
@@ -94,7 +94,7 @@ Test no. 2
 Description of the test: After submitting the form, it will display a message to click ok to go to the quiz page by using your username.  
 Expected Outcome: A message will show by using your username. 
 Actual Outcome: Works as expected.
-Error: no
+Error: no.
 
 Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/f07d0b76-24a2-46b7-92b7-226428aa3685)
@@ -103,8 +103,8 @@ Test no. 3
 
 Description of the test: After clicking ok, it will show the question rendomisely. 
 Expected Outcome: Should randomise the question.
-Actual Outcome: Works as expected
-Error: no 
+Actual Outcome: Works as expected.
+Error: no.
 
 Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/0c728868-3e38-4fe3-9af3-77a857ef729d)
@@ -113,8 +113,8 @@ Test no. 4
 
 Description of the test: next button should be hidden until answer is clicked.
 Expected Outcome: next button should be hidden. 
-Actual Outcome: works as expected 
-Error: no 
+Actual Outcome: works as expected. 
+Error: no. 
 
 Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/0c728868-3e38-4fe3-9af3-77a857ef729d)
@@ -123,8 +123,8 @@ Screenshot as proof:
 
 Description of the test: After clicking the answer, it will show the coccert answer and wrong answer by using green for correct and red for wrong. 
 Expected Outcome: should show green for correct and red for wrong answer. 
-Actual Outcome: Work as expected
-Error: no 
+Actual Outcome: Work as expected.
+Error: no. 
 
 Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/0e81174d-522a-4871-ab15-56c318e8a692)
@@ -133,8 +133,8 @@ Test no. 6
 
 Description of the test: After clicking the answer next button will show to go to the nest question.
 Expected Outcome: next button will show after clicking the answer.
-Actual Outcome: work as expected
-Error: no 
+Actual Outcome: work as expected.
+Error: no. 
 
 Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/0e81174d-522a-4871-ab15-56c318e8a692)
@@ -143,8 +143,8 @@ Screenshot as proof:
 
 Description of the test: After finishing the questions, it will show the score and a message. 
 Expected Outcome: a message should appear to show the score. 
-Actual Outcome: works as expected 
-Error: no
+Actual Outcome: works as expected. 
+Error: no.
 
 Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/27a05128-1490-4ef2-9372-96835a4f1aa9)
@@ -153,8 +153,8 @@ Test no. 8
 
 Description of the test: A restart button should show to replay the quiz. 
 Expected Outcome: restart button should show to play again.
-Actual Outcome: works as expected 
-Error: no
+Actual Outcome: works as expected. 
+Error: no.
 
 Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/27a05128-1490-4ef2-9372-96835a4f1aa9)
@@ -162,16 +162,16 @@ Screenshot as proof:
 Test no. 9
 
 Description of the test: should be the internal and external links to the pages. 
-Expected Outcome: links should be in the pages
-Actual Outcome: works as expected 
-Error: no
+Expected Outcome: links should be in the pages.
+Actual Outcome: works as expected. 
+Error: no.
 
 Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/a62ad005-f3df-4939-b3f9-9821e344bd30)
 
 ![Image](https://github.com/user-attachments/assets/c6b5f170-ca9f-487e-9271-ae45d76e347b)
 
-### Gannt chart
+### Gantt chart
 
 ![Image](https://github.com/user-attachments/assets/f9fa5c31-80b5-49c9-8c45-5161a7d6bbb9)
 
