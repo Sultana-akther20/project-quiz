@@ -171,8 +171,11 @@ Screenshot as proof:
 
 ![Image](https://github.com/user-attachments/assets/c6b5f170-ca9f-487e-9271-ae45d76e347b)
 
-
 ### Gannt chart
+
+![Image](https://github.com/user-attachments/assets/f9fa5c31-80b5-49c9-8c45-5161a7d6bbb9)
+
+![Image](https://github.com/user-attachments/assets/d3fc0213-dab5-4dc1-9730-d10acd187d71)
 
 ### ScreenShots of the pages
 
