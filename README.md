@@ -79,6 +79,78 @@ I have deployed from github main branch.
 
 ### Test plan
 
+Test no.1 
+Description of the test: Make a form for username and submit buttons and it’ll indicate require.
+Expected Outcome: Should show require username, if empty button submit.
+Actual Outcome: Works as expected
+Error: no 
+Screenshot as proof 
+
+Test no. 2
+Description of the test: After submitting the form, it will display a message to click ok to go to the quiz page by using your username.  
+Expected Outcome: A message will show by using your username. 
+Actual Outcome: Works as expected.
+Error: no 
+Screenshot as proof 
+
+Test no. 3
+Description of the test: After clicking ok, it will show the question rendomisely. 
+Expected Outcome: Should randomise the question.
+Actual Outcome: Works as expected
+Error: no 
+Screenshot as proof 
+ 
+Test no. 4
+Description of the test: next button should be hidden until answer is clicked.
+Expected Outcome: next button should be hidden. 
+Actual Outcome: works as expected 
+Error: no 
+Screenshot as proof 
+
+ Test no. 5
+Description of the test: After clicking the answer, it will show the coccert answer and wrong answer by using green for correct and red for wrong. 
+Expected Outcome: should show green for correct and red for wrong answer. 
+Actual Outcome: Work as expected
+Error: no 
+Screenshot as proof 
+
+Test no. 6 
+Description of the test: After clicking the answer next button will show to go to the nest question.
+Expected Outcome: next button will show after clicking the answer.
+Actual Outcome: work as expected
+Error: no 
+Screenshot as proof
+
+ Test no. 7
+Description of the test: After finishing the questions, it will show the score and a message. 
+Expected Outcome: a message should appear to show the score. 
+Actual Outcome: works as expected 
+Error: no
+Screenshot as proof 
+
+Test no. 8
+Description of the test: A restart button should show to replay the quiz. 
+Expected Outcome: restart button should show to play again.
+Actual Outcome: works as expected 
+Error: no
+Screenshot as proof 
+
+Test no. 9
+Description of the test: 
+Expected Outcome 
+Actual Outcome 
+Error 
+Screenshot as proof 
+
+
+
+
+
+
+
+
+
+
 ### Gannt chart
 
 ### ScreenShots of the pages
