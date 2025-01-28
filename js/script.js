@@ -191,13 +191,16 @@ $(document).ready(function () {
             $nextElement.text("Restart The Quiz").show();
         };
         $nextElement.on("click", function () {
+            if($nextElement.text() === "Restart The Quiz"){
+                startQuiz();
+            }else{
             currentIndex++;
             if (currentIndex < quiz.length) {
                 showQuestion();
             } else {
                 showScore();
             }
-
+            }
         });
         startQuiz();
 
