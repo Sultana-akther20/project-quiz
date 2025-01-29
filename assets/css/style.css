@@ -7,11 +7,14 @@
 #body {
     background: url(../images/q-a.jpeg);
     background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    margin: 0;
 /*
     display: flex;
     flex-direction: column;
@@ -125,21 +128,22 @@ nav a:hover {
     border: 3px solid black;
     text-align: center;
     padding: 20px;
-    margin: 20px;
     margin-top: 50px;
-    width: 40%;
     max-width: 500px;
     background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    height: 60%;
+    width: 90%;
+    margin: 0 auto;
 }
 #section1 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.paragraph{
+    color: black;
 }
 
 footer {
