@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+#body {
     background: url(../images/q-a.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,10 +22,16 @@ body {
     width: 100vw;
     
 }
+#quiz{
+background-color: antiquewhite;
+background-position: center;
+justify-content: center;
+text-align: center;
+}
+
 
 h1 {
     font-size: 3rem;
-    color: white;
     text-align: center;
 
 }
@@ -113,20 +119,13 @@ nav a:hover {
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
 #section1 {
     border: 3px solid black;
     text-align: center;
     align-items: center;
     padding: 20px;
-    margin: auto;
-    width: 50%;
+    margin: 20px;
+    width: 60%;
 }
 
 footer {
