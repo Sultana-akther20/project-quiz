@@ -11,15 +11,12 @@
     background-position: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    align-items: center;
-    justify-content: center;
     margin: 0;
-    padding: 0;
+/*
     display: flex;
     flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: center;
+    */
     
 }
 #quiz{
@@ -29,7 +26,12 @@ justify-content: center;
 text-align: center;
 }
 
-
+header#main{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 10px;
+    width: 100%;
+}
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -122,10 +124,22 @@ nav a:hover {
 #section1 {
     border: 3px solid black;
     text-align: center;
-    align-items: center;
     padding: 20px;
     margin: 20px;
-    width: 60%;
+    margin-top: 50px;
+    width: 40%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#section1 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -140,9 +154,8 @@ footer {
 label,
 input,
 button {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
     align-items: center;
     }
 
