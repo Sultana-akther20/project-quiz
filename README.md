@@ -20,9 +20,9 @@ I used background-colour: antiquewhite for the page, for h1:white for index, for
 ### Font
 I used Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif as a font family.
 ### Images
-<!-- https://pixabay.com/illustrations/question-mark-green-background-5949781/ (question)-->
-     <!-- https://pixabay.com/illustrations/quiz-time-quiz-text-greeting-9163843/ (start-quiz)-->
-     This are the website I used to get the images for free.
+https://www.pexels.com/photo/question-and-answer-letters-and-an-exclamation-and-question-marks-11183364/
+https://pixabay.com/illustrations/quiz-time-quiz-text-greeting-9163843/ 
+This are the website where I downloaded the images for free.
 ### Video
 I used free video ("https://videos.pexels.com/video-files/5839090/5839090-hd_1080_1920_24fps.mp4")
 ### Anchor links
