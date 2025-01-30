@@ -6,11 +6,11 @@ This website is about a quiz, related to the uk. The goal and purpose are to pro
 
 ## User Stories
 ### User
-1. As a newcomers, I want to know about uk generelly, so I won't stuck with basic things that i don't know about uk.
-2.As a immigrants, I want to pass my life in the uk test, so I can get my uk settlement visa.
+1. As a newcomers, I want to know about uk generelly, so I won't stuck with basic things that I don't know about uk.
+2.As a immigrants, I want to pass my life in the uk test, so I can get my uk settlement visa and british passport.
 3. As a foreigners, I want to get a general knowledge about uk and other countries, so I can extend my knowledge.
 ### From Us
-1. as a c
+1. as a wesite creator, my plan is to help user's to get some idea about uk, so they can have some knowledge.
 
 
 ## Design and Elements
@@ -33,7 +33,8 @@ I used media query to make the website responsive for different divices.
 I used form to make username and submit to play the quiz.
 ### Known bugs
 
-
+### content 
+Content was written by me but I have got lots of ideas and helps to create this website. 
 ### get helps from
 1. From my teacher
 2. From code institute website
@@ -73,9 +74,12 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 [git](https://git-scm.com/),
 [github](https://github.com/),
 [Figma](https://www.figma.com/),
+[w3school](https://www.w3schools.com/)
 
 ### terget audience
-
+1. Newcommer
+2. Forigners
+3. Immigrants
 ### testing
 
 ### HTML validator
