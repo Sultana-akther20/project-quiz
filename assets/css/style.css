@@ -154,6 +154,14 @@ nav a:hover {
     line-height: 1.4;
     background-color: rgba(0, 0, 0, 0.7);
 }
+#myBtn{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 10%;
+    margin: 20px auto;
+}
 
 /* The Modal (background) */
 .modal {
