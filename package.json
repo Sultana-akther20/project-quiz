@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "jquery": "^3.7.1"
   },
   "name": "project-quiz",
   "version": "1.0.0",

@@ -205,7 +205,7 @@ $(window).click(function(event) {
             $nextElement.show();
         };
         //showScore showes the final score in a message after clearing the state 
-        const showScore = () => {
+        const showScore = ($questionElement, $nextElement, score, quizLength) => {
             resetFunction();
             $questionElement.text(`you scored ${score} out of ${quiz.length}!`);
             $nextElement.text("Restart The Quiz").show();
@@ -238,4 +238,6 @@ $(window).click(function(event) {
 
 
 //for testinhg
-module.exports = { randomQuestion, startQuiz, showQuestion, resetFunction, selectAnswer, showScore, handleNextButton, };
+
+module.exports = {showScore};
+
