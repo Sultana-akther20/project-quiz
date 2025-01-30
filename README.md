@@ -23,10 +23,8 @@ I used Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif as a font fami
 https://www.pexels.com/photo/question-and-answer-letters-and-an-exclamation-and-question-marks-11183364/
 https://pixabay.com/illustrations/quiz-time-quiz-text-greeting-9163843/ 
 This are the website where I downloaded the images for free.
-### Video
-I used free video ("https://videos.pexels.com/video-files/5839090/5839090-hd_1080_1920_24fps.mp4")
 ### Anchor links
-I used anchor links inside inside nav in header.
+I used anchor links inside the nav in header.
 ### Footer
 I used font awesome kit to get the icon for social media and used copyright symble.
 ### media Query
@@ -36,15 +34,12 @@ I used form to make username and submit to play the quiz.
 ### Known bugs
 
 
-### content
-
-
 ### get helps from
-1.From my teacher
-2.From code institute
-3.From mentor
-4.from youtube videos
-5.from AI
+1. From my teacher
+2. From code institute website
+3. From mentor
+4. From youtube videos
+5. From my friends
 
 
 ### Deployment
@@ -56,12 +51,14 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 * After they need to install the Gitpod Browser Extensions for Chrome, then restart the browser.
 * Then log into Gitpod with their gitpod account and navigate to the [Project GitHub repository](https://github.com/Sultana-akther20/project-quiz.git).
 * Then they have to click the green "Gitpod" button in the top right corner of the repository and this will make a new gitpod workspace to be created from the code in github, so you can work locally.
+
 #### To work on the project within any local IDE
 * First they have to click this link [ Project GitHub repository](https://github.com/Sultana-akther20/project-quiz.git). Under the repository name, they have to click "Clone or download".
 * In the HTTPs section, copy the clone URL for the repository.
 * In their IDE open the terminal, then change the current working directory to the location where they want to cloned directory to be made.
 * Then type git clone and paste the URL they copied before, the project github repository one. 
 * Then press Enter and a local clone will be created for them. 
+
 ### Testing stories for UX section
 
 ### Testing stories for UI section
@@ -95,94 +92,94 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ### Test plan
 
-Test no.1
+#### Test no.1
 
-Description of the test: Make a form for username and submit buttons and it’ll indicate require.
-Expected Outcome: Should show require username, if tehy submit empty button.
-Actual Outcome: Works as expected.
-Error: no.
+* Description of the test: Make a form for username and submit buttons and it’ll indicate require.
+* Expected Outcome: Should show require username, if tehy submit empty button.
+* Actual Outcome: Works as expected.
+* Error: no.
 
-Screenshot as proof:
+* Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/809b95ff-0071-44dd-b043-d19e0c1aaee5)
 
-Test no. 2
+#### Test no. 2
 
-Description of the test: After submitting the form, it will display a message to click ok to go to the quiz page by using your username.  
-Expected Outcome: A message will show by using your username. 
-Actual Outcome: Works as expected.
-Error: no.
+* Description of the test: After submitting the form, it will display a message to click ok to go to the quiz page by using your username.  
+* Expected Outcome: A message will show by using your username. 
+* Actual Outcome: Works as expected.
+* Error: no.
 
-Screenshot as proof:
+* Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/f07d0b76-24a2-46b7-92b7-226428aa3685)
 
-Test no. 3
+#### Test no. 3
 
-Description of the test: After clicking ok, it will show the question rendomisely. 
-Expected Outcome: Should randomise the question.
-Actual Outcome: Works as expected.
-Error: no.
+* Description of the test: After clicking ok, it will show the question rendomisely. 
+* Expected Outcome: Should randomise the question.
+* Actual Outcome: Works as expected.
+* Error: no.
 
-Screenshot as proof:
+* Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/0c728868-3e38-4fe3-9af3-77a857ef729d)
  
-Test no. 4
+#### Test no. 4
 
-Description of the test: next button should be hidden until answer is clicked.
-Expected Outcome: next button should be hidden. 
-Actual Outcome: works as expected. 
-Error: no. 
+* Description of the test: next button should be hidden until answer is clicked.
+* Expected Outcome: next button should be hidden. 
+* Actual Outcome: works as expected. 
+* Error: no. 
 
-Screenshot as proof:
+* Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/0c728868-3e38-4fe3-9af3-77a857ef729d)
 
- Test no. 5
+#### Test no. 5
 
-Description of the test: After clicking the answer, it will show the coccert answer and wrong answer by using green for correct and red for wrong. 
-Expected Outcome: should show green for correct and red for wrong answer. 
-Actual Outcome: Work as expected.
-Error: no. 
+* Description of the test: After clicking the answer, it will show the coccert answer and wrong answer by using green for correct and red for wrong. 
+* Expected Outcome: should show green for correct and red for wrong answer. 
+* Actual Outcome: Work as expected.
+* Error: no. 
 
-Screenshot as proof:
+* Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/0e81174d-522a-4871-ab15-56c318e8a692)
 
-Test no. 6 
+#### Test no. 6 
 
-Description of the test: After clicking the answer next button will show to go to the nest question.
-Expected Outcome: next button will show after clicking the answer.
-Actual Outcome: work as expected.
-Error: no. 
+* Description of the test: After clicking the answer next button will show to go to the nest question.
+* Expected Outcome: next button will show after clicking the answer.
+* Actual Outcome: work as expected.
+* Error: no. 
 
-Screenshot as proof:
+* Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/0e81174d-522a-4871-ab15-56c318e8a692)
 
- Test no. 7
+#### Test no. 7
 
-Description of the test: After finishing the questions, it will show the score and a message. 
-Expected Outcome: a message should appear to show the score. 
-Actual Outcome: works as expected. 
-Error: no.
+* Description of the test: After finishing the questions, it will show the score and a message. 
+* Expected Outcome: a message should appear to show the score. 
+* Actual Outcome: works as expected. 
+* Error: no.
 
-Screenshot as proof:
+* Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/27a05128-1490-4ef2-9372-96835a4f1aa9)
 
-Test no. 8
+#### Test no. 8
 
-Description of the test: A restart button should show to replay the quiz. 
-Expected Outcome: restart button should show to play again.
-Actual Outcome: works as expected. 
-Error: no.
+* Description of the test: A restart button should show to replay the quiz. 
+* Expected Outcome: restart button should show to play again.
+* Actual Outcome: works as expected. 
+* Error: no.
 
-Screenshot as proof:
+* Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/27a05128-1490-4ef2-9372-96835a4f1aa9)
 
-Test no. 9
+#### Test no. 9
 
-Description of the test: should be the internal and external links to the pages. 
-Expected Outcome: links should be in the pages.
-Actual Outcome: works as expected. 
-Error: no.
+* Description of the test: should be the internal and external links to the pages. 
+* Expected Outcome: links should be in the pages.
+* Actual Outcome: works as expected. 
+* Error: no.
 
-Screenshot as proof:
+* Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/a62ad005-f3df-4939-b3f9-9821e344bd30)
 
 ![Image](https://github.com/user-attachments/assets/c6b5f170-ca9f-487e-9271-ae45d76e347b)
@@ -195,10 +192,5 @@ Screenshot as proof:
 
 ### ScreenShots of the pages
 
-![Image](https://github.com/user-attachments/assets/d54e9433-4965-4c66-9f3d-9d460f5e68c6)
 
-![Image](https://github.com/user-attachments/assets/b4b4735c-5e98-4bb4-8be2-bb68fcabf656)
 
-![Image](https://github.com/user-attachments/assets/c899059d-ced7-481f-b4a5-0e96983f089e)
-
-![Image](https://github.com/user-attachments/assets/e752f1b9-525f-4a91-b835-fe6e0858788b)
