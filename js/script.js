@@ -17,6 +17,26 @@ $(document).ready(function () {
             });
         }
     }
+    // Get the modal
+var $modal = $("#myModal");
+
+
+// When the user clicks on the button, open the modal
+$("#myBtn").on("click", function() {
+  $modal.show();
+});
+
+// When the user clicks on <span> (x), close the modal
+$(".close").on("click", function() {
+  $modal.hide();
+});
+
+// When the user clicks anywhere outside of the modal, close it
+$(window).click(function(event) {
+  if ($(event.target).is($modal)) {
+    $modal.hide();
+  }
+});
     if (currentPage.includes("quiz.html")) {
 
         //used array to set the question and answer
