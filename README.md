@@ -2,7 +2,7 @@
 [QUIZ ABOUT UK](https://8000-sultanaakth-projectquiz-8kyexnqw14y.ws.codeinstitute-ide.net)
 
 ## My Website Discription
-This website is about a quiz, related to the uk. The goal and purpose are to provide users to learn about uk, history and get a general knowledge. If anyone wants to know about uk to get a general knowledge, wants to move to the uk and wants to get a settelment visa etc. I have make the question randomise so users can't copy each others. To play this quiz you have to make a username and then submit it. After it will show user a message by using their username if they wants to go to the quiz page and they have to click ok. Then in quiz page there will be link for quiz section to go to the  quiz or user can scroll down. next button won't be apear until they click the answer for the first question. Then it will show them green for correct answer and red for wrong answer and next button will appear on the screen to go to the next question. After finishing all the questions it will show them the score they have got out of 10 and restart button will show to play again.
+This website is about a quiz, related to the uk. The goal and purpose are to provide users to learn about uk, history and get a general knowledge. If anyone wants to know about uk to get a general knowledge, wants to move to the uk and wants to get a settelment visa etc. I have make the question randomise, so users can't copy each others. To play this quiz you have to make a username and then submit it. After it will show user a message by using their username if they wants to go to the quiz page, then they have to click ok. Then in quiz page there will be link for quiz section to go to the quiz or user can scroll down. next button won't be apear until they click the answer for the first question. Then it will show them green for correct answer and red for wrong answer and next button will appear on the screen to go to the next question. After finishing all the questions it will show them the score they have got out of 10 and restart button will show to play again. If you want to play again then click the restart button.
 
 ## User Stories
 ### User
@@ -48,11 +48,23 @@ I used form to make username and submit to play the quiz.
 
 
 ### Deployment
-This project was developed using the gitpod and VS Code. I made the commited to git and pushed to github using the gitpod.
-I have deployed this project from github repositories, selected this the repository I'm working with, then selected the setting button from the top of the page and scroll down to the Pages section. after that on this page on the Source clicked and selected Master Branch. on the same page under the branch select main from dropdown menu and selsect root then clicked save. Then the page was refresh autometically and deployed. Then retrieved the link from the github pages.
+This project I developed using the [Gitpod](https://sultana-akther20.github.io/project-quiz/) and VS Code. I commited to git and pushed to github using the gitpod.
+I have deployed this project from [GitHub repositories](https://github.com/Sultana-akther20/project-quiz.git), selected this the repository I'm working with, then selected the setting button from the top of the page and scroll down to the Pages section. after that on this page on the Source clicked and selected Master Branch. on the same page under the branch select main from dropdown menu and selsect root then clicked save. Then the page was refresh autometically and deployed. Then retrieved the link from the github pages. 
 
-### How to run this locally
+### How to run this project locally
+* If the user wants to run this project, they have to Create a GitHub account, then they have to use the Chrome browser. 
+* After they need to install the Gitpod Browser Extensions for Chrome, then restart the browser.
+* Then log into Gitpod with their gitpod account and navigate to the [Project GitHub repository](https://github.com/Sultana-akther20/project-quiz.git).
+* Then they have to click the green "Gitpod" button in the top right corner of the repository and this will make a new gitpod workspace to be created from the code in github, so you can work locally.
+#### To work on the project within any local IDE
+* First they have to click this link [ Project GitHub repository](https://github.com/Sultana-akther20/project-quiz.git). Under the repository name, they have to click "Clone or download".
+* In the HTTPs section, copy the clone URL for the repository.
+* In their IDE open the terminal, then change the current working directory to the location where they want to cloned directory to be made.
+* Then type git clone and paste the URL they copied before, the project github repository one. 
+* Then press Enter and a local clone will be created for them. 
+### Testing stories for UX section
 
+### Testing stories for UI section
 
 ### Language used
 [HTML5](https://en.wikipedia.org/wiki/HTML5),
