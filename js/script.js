@@ -226,5 +226,5 @@ if (currentPage.includes("quiz.html")) {
 }
 });
 //for testinhg
-//module.exports = { showScore };
+module.exports = { showScore };
 
