@@ -1,4 +1,4 @@
-jQuery(function($){
+$(document).ready(function(){
     console.log("jquery is working");
 const currentPage = window.location.pathname;
 if (currentPage.includes("index.html")) {
