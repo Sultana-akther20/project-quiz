@@ -47,13 +47,13 @@ $(document).ready(function () {
             question: "What is the capital city of England?",
             answers: [
                 { text: "London", correct: true },
-                { text: "Barmingham", correct: false },
+                { text: "Birmingham", correct: false },
                 { text: "Luton", correct: false },
                 { text: "Manchester", correct: false },
             ]
         },
         {
-            question: "What currency is called in the UK?",
+            question: "What is the currency in the UK?",
             answers: [
                 { text: "Euro", correct: false },
                 { text: "Pounds Sterling", correct: true },
@@ -62,7 +62,7 @@ $(document).ready(function () {
             ]
         },
         {
-            question: "Which one is UK's timezone?",
+            question: "What is UK's timezone?",
             answers: [
                 { text: "GMT", correct: true },
                 { text: "EST", correct: false },
@@ -71,7 +71,7 @@ $(document).ready(function () {
             ]
         },
         {
-            question: "What does BBC stand for??",
+            question: "What does BBC stand for?",
             answers: [
                 { text: "British Bigest Cat ", correct: false },
                 { text: "British Baking Contest", correct: false },
@@ -107,7 +107,7 @@ $(document).ready(function () {
             ]
         },
         {
-            question: "When queen Elizabeth II died?",
+            question: "When did queen Elizabeth the II died?",
             answers: [
                 { text: "2000", correct: false },
                 { text: "1952", correct: false },
@@ -125,7 +125,7 @@ $(document).ready(function () {
             ]
         },
         {
-            question: "How many years did Queen Elizabeth rule?",
+            question: "How many years did Queen Elizabeth II rule?",
             answers: [
                 { text: "Over 70 years", correct: true },
                 { text: "71 years", correct: false },
