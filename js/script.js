@@ -1,4 +1,5 @@
-
+jQuery(function($){
+    console.log("jquery is working");
 const currentPage = window.location.pathname;
 if (currentPage.includes("index.html")) {
 
@@ -223,6 +224,7 @@ if (currentPage.includes("quiz.html")) {
     //start the quiz after script is loaded
     startQuiz();
 }
+});
 //for testinhg
-module.exports = { showScore };
+//module.exports = { showScore };
 
