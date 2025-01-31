@@ -7,10 +7,12 @@ This website is about a quiz, related to the uk. The goal and purpose are to pro
 ## User Stories
 ### User
 1. As a newcomers, I want to know about uk generelly, so I won't stuck with basic things that I don't know about uk.
-2.As a immigrants, I want to pass my life in the uk test, so I can get my uk settlement visa and british passport.
+2. As a immigrants, I want to pass my life in the uk test, so I can get my uk settlement visa and british passport.
 3. As a foreigners, I want to get a general knowledge about uk and other countries, so I can extend my knowledge.
 ### From Us
-1. as a wesite creator, my plan is to help user's to get some idea about uk, so they can have some knowledge.
+1. As a wesite developer, my plan is to help user's to get some idea's about uk, so they can have some knowledge.
+2. As a developer, I want user to get access quickly for the quiz and would not struggle how to to go to the quiz page and play, I have put a instruction box, so they can click on the box and find the information about quiz and everything.
+3. As a developer, If the user wants to come back to the home page after entering the quiz page, I have created the external link to go back to the home page, so they can come back again.
 
 
 ## Design and Elements
@@ -34,13 +36,14 @@ I used form to make username and submit to play the quiz.
 ### Known bugs
 
 ### content 
-Content was written by me but I have got lots of ideas and helps to create this website. 
+Content was written by me but I have got lots of ideas and helps to create this website. I have document this below and I have got instruction box idea from w3schools and changed the things related to my project. 
 ### get helps from
 1. From my teacher
 2. From code institute website
 3. From mentor
 4. From youtube videos
 5. From my friends
+6. w3schools
 
 
 ### Deployment
@@ -80,7 +83,12 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 1. Newcommer
 2. Forigners
 3. Immigrants
+
+### library
+1. Im usinf [jQuery](https://jquery.com/)
+
 ### testing
+
 
 ### HTML validator
 
@@ -194,7 +202,15 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ![Image](https://github.com/user-attachments/assets/d3fc0213-dab5-4dc1-9730-d10acd187d71)
 
+### JSHint for JavaScript
+![Image](https://github.com/user-attachments/assets/59071b24-4ab9-4095-aa05-25c74f2e414c)
+
 ### ScreenShots of the pages
 
+![Image](https://github.com/user-attachments/assets/955ddef7-4c13-45cd-8afb-aae7d3923f3f)
+
+![Image](https://github.com/user-attachments/assets/349d0874-c1b4-4d00-80e7-20ac033a04cf)
+
+![Image](https://github.com/user-attachments/assets/a281fc72-0086-41f5-862e-1eb28e17477b)
 
 

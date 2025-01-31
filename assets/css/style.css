@@ -15,23 +15,24 @@
     background-size: cover;
     background-position: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;    
+    color: white;
 }
 
-#quiz{
-background-color: antiquewhite;
-background-position: center;
-justify-content: center;
-text-align: center;
+#quiz {
+    background-color: antiquewhite;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
 }
 
-header#main{
+header#main {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 10px;
     width: 100%;
 }
+
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -66,7 +67,7 @@ img {
 }
 
 .btn {
-    
+
     color: black;
     border: 1.5px solid;
     padding: 10px;
@@ -76,7 +77,8 @@ img {
     font-size: 1rem;
     cursor: pointer;
 }
-#div{
+
+#div {
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -96,7 +98,7 @@ img {
     width: 100px;
     padding: 5px;
     margin: 5px;
-    
+
     display: none;
     align-items: center;
 }
@@ -131,7 +133,7 @@ nav a:hover {
     border: 3px solid black;
     text-align: center;
     padding: 20px;
-    margin: 20px auto ;
+    margin: 20px auto;
     max-width: 500px;
     background: rgba(0, 0, 0, 0.7);
     justify-content: center;
@@ -141,13 +143,14 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
-#section1 form{
+
+#section1 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-#myBtn{
+/*this css from w3schools*/
+#myBtn {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -158,42 +161,52 @@ nav a:hover {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
     color: black;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: blue;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 footer {
     text-align: center;
@@ -201,20 +214,20 @@ footer {
     align-items: center;
     padding: 40px;
     border: 3px solid black;
-    
+
     height: 20%;
     margin: 40px;
     justify-content: center;
-    
-    }
-    
+
+}
+
 label,
 input,
 button {
     text-align: center;
     padding: 10px;
     align-items: center;
-    }
+}
 
 label {
     text-align: center;
@@ -234,7 +247,7 @@ label {
         padding: 1rem;
         font-size: 2rem;
     }
-    
+
     nav {
         margin: 10px;
 
@@ -262,18 +275,22 @@ label {
         width: 50%;
         font-size: 1rem;
     }
-    #section1{
+
+    #section1 {
         max-width: 95%;
         height: auto;
     }
-    .paragraph{
+
+    .paragraph {
         font-size: 1rem;
         line-height: 1;
     }
+
     header#main {
-       margin-bottom: 1rem; 
+        margin-bottom: 1rem;
     }
-    #body{
+
+    #body {
         width: 100%;
         height: auto;
         background-position: center;
@@ -292,19 +309,21 @@ label {
         background-size: cover;
     }
 
-    #section1{
+    #section1 {
         height: auto;
         width: 40%;
     }
 
-.paragraph{
-    font-size: 1rem;
-    line-height: 1.6;
-}
-header#main {
-   margin-bottom: 1rem; 
-}
-    #body{
+    .paragraph {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    header#main {
+        margin-bottom: 1rem;
+    }
+
+    #body {
         width: 100%;
         min-height: 100vh;
         background-position: center;
@@ -312,6 +331,6 @@ header#main {
         background-size: cover;
         margin: 0;
         padding: 0;
-        
+
     }
 }
