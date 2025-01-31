@@ -64,9 +64,8 @@ img {
     max-width: 600px;
     margin: 1rem auto;
 }
-
+/*set the button for styling and set the cursor to indicate for clicking*/
 .btn {
-
     color: black;
     border: 1.5px solid;
     padding: 10px;
@@ -76,34 +75,31 @@ img {
     font-size: 1rem;
     cursor: pointer;
 }
-
+/*set the container as a flex box*/
 #div {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/*set the hover over on the button to change the color unless disabled*/
 .btn:hover:not([disabled]) {
     background-color: khaki;
 }
-
+/*disable button to clicking disabled*/
 .btn:disabled {
     cursor: no-drop;
 }
-
+/*hide the next buttonand set the color and size*/
 .next {
     background-color: lightblue;
     width: 100px;
     padding: 5px;
     margin: 5px;
-
     display: none;
     align-items: center;
 }
-
-
-
+/*style for navigation bar with flexbox */
 nav {
     color: blue;
     width: 100%;
@@ -113,21 +109,19 @@ nav {
     align-items: center;
     display: flex;
     gap: 30px;
-
 }
-
+/*links style*/
 nav a {
     color: blue;
     text-decoration: none;
     font-size: 2rem;
-
 }
-
+/*set hoover effect*/
 nav a:hover {
     background-color: aliceblue;
     border-radius: 10px;
 }
-
+/*form box styling to display nicely*/
 #section1 {
     border: 3px solid black;
     text-align: center;
@@ -142,7 +136,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
-
+/*form elements will be in column*/
 #section1 form {
     display: flex;
     flex-direction: column;
@@ -206,20 +200,18 @@ nav a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
+/*style for footer*/
 footer {
     text-align: center;
     margin-top: auto;
     align-items: center;
     padding: 40px;
     border: 3px solid black;
-
     height: 20%;
     margin: 40px;
     justify-content: center;
-
 }
-
+/*style for label, input and button*/
 label,
 input,
 button {
@@ -231,7 +223,7 @@ button {
 label {
     text-align: center;
 }
-
+/*set the colour for right and wrong answer*/
 .correct {
     background: green;
 }
