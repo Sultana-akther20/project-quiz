@@ -6,9 +6,12 @@ This website is about a quiz, related to the uk. The goal and purpose are to pro
 
 ## User Stories
 ### User
+
 1. As a newcomers, I want to know about uk generelly, so I won't stuck with basic things that I don't know about uk.
 2. As a immigrants, I want to pass my life in the uk test, so I can get my uk settlement visa and british passport.
 3. As a foreigners, I want to get a general knowledge about uk and other countries, so I can extend my knowledge.
+4. As a next generation, I want to know about the history of the uk, so I will gain some knowledge about history of uk.
+
 ### From Us
 1. As a wesite developer, my plan is to help user's to get some idea's about uk, so they can have some knowledge.
 2. As a developer, I want user to get access quickly for the quiz and would not struggle how to to go to the quiz page and play, I have put a instruction box, so they can click on the box and find the information about quiz and everything.
@@ -63,10 +66,6 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 * Then type git clone and paste the URL they copied before, the project github repository one. 
 * Then press Enter and a local clone will be created for them. 
 
-### Testing stories for UX section
-
-### Testing stories for UI section
-
 ### Language used
 [HTML5](https://en.wikipedia.org/wiki/HTML5),
 [CSS3](https://en.wikipedia.org/wiki/CSS3),
@@ -78,14 +77,13 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 [github](https://github.com/),
 [Figma](https://www.figma.com/),
 [w3school](https://www.w3schools.com/)
+[jQuery](https://jquery.com/)
 
 ### terget audience
 1. Newcommer
 2. Forigners
 3. Immigrants
-
-### library
-1. Im usinf [jQuery](https://jquery.com/)
+4. future generation
 
 ### testing
 
@@ -103,15 +101,26 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ![Image](https://github.com/user-attachments/assets/8e40b859-d57e-40a2-bd2d-c660a99bd5a2)
 
-### JavaScript validator
 
+### JSHint for JavaScript
+
+![Image](https://github.com/user-attachments/assets/59071b24-4ab9-4095-aa05-25c74f2e414c)
 
 ### Wireframe
 ![Image](https://github.com/user-attachments/assets/027e545d-d016-4cbd-8f2a-c700f4866b3c)
 
 ![Image](https://github.com/user-attachments/assets/6ea40126-6a18-4f60-82b2-4e1a26031f21)
 
-### Test plan
+### Test Plan
+1. on the main page, should be a username and submit button to go to the quiz page.
+2. username should be requir and after submit a message should indicate by using your username.
+3. on the main page there should be a instruction button for informatio of the quiz and button should be on click.
+4. in the quiz page there should be the link for to go back to the home page.
+5. questions should be randomise.
+6. after clicking the first questions answer next button will appear, otherwise next button should be hidden.
+7. after finishing all the questions a message will appear to tell you your score and restart the quiz button will display.
+
+### Manual Testing
 
 #### Test no.1
 
@@ -195,15 +204,44 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 #### Test no. 9
 
-* Description of the test: should be the internal and external links to the pages. 
-* Expected Outcome: links should be in the pages.
+* Description of the test: should be the internal and external links to the page. 
+* Expected Outcome: links should be in the page.
 * Actual Outcome: works as expected. 
 * Error: no.
 
 * Screenshot as proof:
- ![Image](https://github.com/user-attachments/assets/a62ad005-f3df-4939-b3f9-9821e344bd30)
+ 
+#### Test no. 10
 
-![Image](https://github.com/user-attachments/assets/c6b5f170-ca9f-487e-9271-ae45d76e347b)
+* Description of the test: username box should be in the middle of the page. 
+* Expected Outcome: box should be in the middle of the page.
+* Actual Outcome: didn't work as expected. 
+* Error: yes.
+* Screenshot as proof:
+![Image](https://github.com/user-attachments/assets/c307ab5e-b09f-4e09-9dfc-5357cc8b2371)
+
+
+* Correction: before I used margin 40% and 20px and many different sizes but nothing working. then I looked at the code institute code for css, so I used margin 20px auto and this fixes the problem.
+Screenshot:
+![Image](https://github.com/user-attachments/assets/ae0e125b-a6a2-4461-ba89-dee2934e4192)
+
+#### test no. 11
+* description: I'm useing jQuery for JavaScript library.
+* Expected outcome: Jquery should be install in the project.
+* actual outcome: It showing undefined
+* error: Yes
+* screenshot:
+ ![Image](https://github.com/user-attachments/assets/02f696c0-2097-41f4-a866-f14e264cfa9f)
+
+ ![Image](https://github.com/user-attachments/assets/c43021ac-ac35-4c02-9bb5-0ff9bc99cc56)
+
+ #### test no. 12
+* description: I'm trying to test a function by using jest.
+* expected outcome: It should test the function
+* actual outcome: It saying the function is undefined and failing
+* error: yes
+* screenshot:
+![Image](https://github.com/user-attachments/assets/67c2f925-77a9-497b-8294-a68cc32ab3d5)
 
 ### Gantt chart
 
@@ -211,8 +249,6 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ![Image](https://github.com/user-attachments/assets/d3fc0213-dab5-4dc1-9730-d10acd187d71)
 
-### JSHint for JavaScript
-![Image](https://github.com/user-attachments/assets/59071b24-4ab9-4095-aa05-25c74f2e414c)
 
 ### ScreenShots of the pages
 
