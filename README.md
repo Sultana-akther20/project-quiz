@@ -104,9 +104,9 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 
 ### Wireframe
-![Image](https://github.com/user-attachments/assets/027e545d-d016-4cbd-8f2a-c700f4866b3c)
+![Image](https://github.com/user-attachments/assets/b18241f5-7d7a-4344-98b4-510770276c17)
 
-![Image](https://github.com/user-attachments/assets/6ea40126-6a18-4f60-82b2-4e1a26031f21)
+![Image](https://github.com/user-attachments/assets/9c80c411-e2fb-489b-a84f-566fb30998ee)
 
 
 ### Test Plan
