@@ -85,15 +85,11 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 3. Immigrants
 4. future generation
 
-### testing
-
 
 ### HTML validator
 ![Image](https://github.com/user-attachments/assets/c82f448f-576f-48a1-a96b-c55a5fb35433)
 
 ![Image](https://github.com/user-attachments/assets/4623ebd7-d15b-46ee-bb6d-249524e8b545)
-
-![Image](https://github.com/user-attachments/assets/bace4626-bb05-4225-b9d7-6cdd8aa1eeb2)
 
 ![Image](https://github.com/user-attachments/assets/043b9628-856d-463b-b33e-d0f3631a132e)
 
@@ -106,10 +102,12 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ![Image](https://github.com/user-attachments/assets/59071b24-4ab9-4095-aa05-25c74f2e414c)
 
+
 ### Wireframe
 ![Image](https://github.com/user-attachments/assets/027e545d-d016-4cbd-8f2a-c700f4866b3c)
 
 ![Image](https://github.com/user-attachments/assets/6ea40126-6a18-4f60-82b2-4e1a26031f21)
+
 
 ### Test Plan
 1. on the main page, should be a username and submit button to go to the quiz page.
@@ -120,8 +118,8 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 6. after clicking the first questions answer next button will appear, otherwise next button should be hidden.
 7. after finishing all the questions a message will appear to tell you your score and restart the quiz button will display.
 
-### Manual Testing
 
+### Manual Testing
 #### Test no.1
 
 * Description of the test: Make a form for username and submit buttons and it’ll indicate require.
