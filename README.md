@@ -91,8 +91,17 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 
 ### HTML validator
+![Image](https://github.com/user-attachments/assets/c82f448f-576f-48a1-a96b-c55a5fb35433)
+
+![Image](https://github.com/user-attachments/assets/4623ebd7-d15b-46ee-bb6d-249524e8b545)
+
+![Image](https://github.com/user-attachments/assets/bace4626-bb05-4225-b9d7-6cdd8aa1eeb2)
+
+![Image](https://github.com/user-attachments/assets/043b9628-856d-463b-b33e-d0f3631a132e)
 
 ### CSS validator
+
+![Image](https://github.com/user-attachments/assets/8e40b859-d57e-40a2-bd2d-c660a99bd5a2)
 
 ### JavaScript validator
 
