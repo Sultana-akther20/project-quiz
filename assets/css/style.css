@@ -1,9 +1,10 @@
+/*this uses all elements on the page*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*style for body and background image and used font-family*/
 #body {
     background: url(../images/q-a.jpeg);
     background-repeat: no-repeat;
@@ -17,14 +18,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
-
+/*style for body by using id*/
 #quiz {
     background-color: antiquewhite;
     background-position: center;
     justify-content: center;
     text-align: center;
 }
-
+/*centers the header and used sizing*/
 header#main {
     text-align: center;
     margin-top: 3rem;
@@ -32,13 +33,12 @@ header#main {
     padding: 10px;
     width: 100%;
 }
-
+/*save the h1 size and position*/
 h1 {
     font-size: 3rem;
     text-align: center;
-
 }
-
+/*set the size and position for header*/
 .header {
     font-size: 4rem;
     color: black;
@@ -46,7 +46,7 @@ h1 {
     margin: 1rem;
     padding: 1rem;
 }
-
+/*set the image width,height and position*/
 img {
     width: 50%;
     height: auto;
@@ -54,10 +54,9 @@ img {
     align-items: center;
     justify-content: center;
 }
-
+/*set the white background for the container*/
 .container {
     background: white;
-
     border-radius: 20px;
     padding: 20px;
     text-align: center;

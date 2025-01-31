@@ -1,15 +1,15 @@
+//check html document fully loaded
 $(document).ready(function () {
     console.log("jquery is working");
+    //gets the current pages file name
     const currentPage = window.location.pathname;
     if (currentPage.includes("index.html")) {
 
-        //act on submition behavior, check the typed username and display a wellcome message to start the quiz
+        //act the form on submition behavior, check the typed username and display a wellcome message to start the quiz
         const $form = $("#form");
         if ($form.length) {
             $form.on("submit", function (e) {
                 e.preventDefault();
-
-
                 const userName = $("#username").val();
                 if (userName) {
                     alert(`Welcome ${userName} to the quiz about UK.`);
@@ -39,6 +39,7 @@ $(document).ready(function () {
             $modal.hide();
         }
     });
+    //check the current page
     if (currentPage.includes("quiz.html")) {
 
         //used array to set the question and answer
@@ -204,12 +205,13 @@ $(document).ready(function () {
             });
             $nextElement.show();
         };
-        //showScore showes the final score in a message after clearing the state 
+        //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
             $questionElement.text(`you scored ${score} out of ${quiz.length}!`);
             $nextElement.text("Restart The Quiz").show();
         };
+        //restart the quiz on button click if no more question is there
         $nextElement.on("click", function () {
             if ($nextElement.text() === "Restart The Quiz") {
                 startQuiz();
