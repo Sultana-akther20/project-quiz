@@ -2,7 +2,7 @@
 const {showScore}= require("../script.js");
 
 
-        
+   
     describe("showScore function", () => {
         test("should show the score after finishing the quiz", () =>{
             const $questionElement = $ ("#question");

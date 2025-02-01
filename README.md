@@ -102,6 +102,9 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ![Image](https://github.com/user-attachments/assets/59071b24-4ab9-4095-aa05-25c74f2e414c)
 
+### Lighthouse
+
+![Image](https://github.com/user-attachments/assets/0105536b-c78f-451f-8c20-8652a893a082)
 
 ### Wireframe
 ![Image](https://github.com/user-attachments/assets/b18241f5-7d7a-4344-98b4-510770276c17)
