@@ -1,5 +1,5 @@
 //check html document fully loaded
- $(document).ready(function () {
+ $(document).on("DOMContentLoaded", function() {
     console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
@@ -229,5 +229,5 @@
     }
 });
 //for testinhg
-module.exports = { showScore };
+//module.exports = { showScore };
 
