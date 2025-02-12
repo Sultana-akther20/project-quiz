@@ -48,8 +48,10 @@ h1 {
 }
 /*set the image width,height and position*/
 img {
+    max-width: 100%;
     width: 50%;
     height: auto;
+    object-fit: cover;
     padding: 0;
     align-items: center;
     justify-content: center;
