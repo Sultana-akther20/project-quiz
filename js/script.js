@@ -10,11 +10,15 @@
         if ($form.length) {
             $form.on("submit", function (e) {
                 e.preventDefault();
-                const userName = $("#username").val();
+                const userName = $("#username").val().trim();
                 if (userName) {
                     alert(`Welcome ${userName} to the quiz about UK.`);
-                    window.location.href = "quiz.html";
-                }
+            
+                        window.location.href = "quiz.html";
+                    };
+                
+                    
+                
             });
         }
     }
@@ -229,5 +233,5 @@
     }
 });
 //for testinhg
-//module.exports = { showScore };
+module.exports = { showScore };
 
