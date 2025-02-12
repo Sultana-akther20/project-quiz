@@ -1,5 +1,5 @@
 # project-quiz
-[QUIZ ABOUT UK](https://8000-sultanaakth-projectquiz-8kyexnqw14y.ws.codeinstitute-ide.net)
+[QUIZ ABOUT UK](https://sultana-akther20.github.io/project-quiz/)
 
 ## My Website Discription
 This website is about a quiz, related to the uk. The goal and purpose are to provide users to learn about uk, history and get a general knowledge. If anyone wants to know about uk to get a general knowledge, wants to move to the uk and wants to get a settelment visa etc. I have make the question randomise, so users can't copy each others. To play this quiz you have to make a username and then submit it. After it will show user a message by using their username if they wants to go to the quiz page, then they have to click ok. Then in quiz page there will be link for quiz section to go to the quiz or user can scroll down. next button won't be apear until they click the answer for the first question. Then it will show them green for correct answer and red for wrong answer and next button will appear on the screen to go to the next question. After finishing all the questions it will show them the score they have got out of 10 and restart button will show to play again. If you want to play again then click the restart button.
