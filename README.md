@@ -74,12 +74,12 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript),
 
 ### frameworks libraries and programme used
-[Font Awesome Kit](https://fontawesome.com/),
-[git](https://git-scm.com/),
-[github](https://github.com/),
-[Figma](https://www.figma.com/),
-[w3school](https://www.w3schools.com/)
-[jQuery](https://jquery.com/)
+1. [Font Awesome Kit](https://fontawesome.com/),
+2. [git](https://git-scm.com/),
+3. [github](https://github.com/),
+4. [Figma](https://www.figma.com/),
+5. [w3school](https://www.w3schools.com/)
+6. [jQuery](https://jquery.com/)
 
 ### terget audience
 1. Newcommer
