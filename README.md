@@ -36,7 +36,9 @@ I used font awesome kit to get the icon for social media and used copyright symb
 I used media query to make the website responsive for different divices.
 ### Form
 I used form to make username and submit to play the quiz.
-### Known bugs
+
+### Known bugs and unfixed
+I have used a message to appear on the screen after typing username and pressing submit but when I do this for the first time it doesn't show the message and take me to the quiz page straight way and if I submit second time, it shows the message by using the username. I tried to fix this but couldn't. So I have address this to fix this in future.
 
 ### content 
 Content was written by me but I have got lots of ideas and helps to create this website. I have document this below and I have got instruction box idea from w3schools and changed the things related to my project. 
