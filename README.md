@@ -40,6 +40,8 @@ I used form to make username and submit to play the quiz.
 ### Known bugs and unfixed
 I have used a message to appear on the screen after typing username and pressing submit but when I do this for the first time it doesn't show the message and take me to the quiz page straight way and if I submit second time, it shows the message by using the username. I tried to fix this but couldn't. So I have address this to fix this in future.
 
+### Favicon
+I used favicon to make the logo of my website. 
 ### content 
 Content was written by me but I have got lots of ideas and helps to create this website. I have document this below and I have got instruction box idea from w3schools and changed the things related to my project. 
 ### get helps from
@@ -80,6 +82,7 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 4. [Figma](https://www.figma.com/),
 5. [w3school](https://www.w3schools.com/)
 6. [jQuery](https://jquery.com/)
+7. [favicon](https://favicon.io/)
 
 ### terget audience
 1. Newcommer
