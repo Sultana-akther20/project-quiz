@@ -5,18 +5,18 @@
 ![Image](https://github.com/user-attachments/assets/37ec7494-d26e-44cf-b645-f9e40a935f1e)
 
 ## My Website Discription
-This website is about a quiz, related to the uk. The goal and purpose are to provide users to learn about uk, history and get a general knowledge. If anyone wants to know about uk to get a general knowledge, wants to move to the uk and wants to get a settelment visa etc. I have make the question randomise, so users can't copy each others. To play this quiz you have to make a username and then submit it. After it will show user a message by using their username if they wants to go to the quiz page, then they have to click ok. Then in quiz page there will be link for quiz section to go to the quiz or user can scroll down. next button won't be apear until they click the answer for the first question. Then it will show them green for correct answer and red for wrong answer and next button will appear on the screen to go to the next question. After finishing all the questions it will show them the score they have got out of 10 and restart button will show to play again. If you want to play again then click the restart button.
+This website is about a quiz, related to the UK. The goals and purposes are to provide users to learn about UK, history and get a general knowledge. If anyone wants to know about UK to get a general knowledge, wants to move to the UK and wants to get a settelment visa etc. So they can use this. I have made the question randomise, so users can't copy others. To play this quiz you have to make a username and then submit it. After it will show user a message by using their username if they wants to go to the quiz page, then they have to click ok. Then in quiz page there will be link for quiz section to go to the quiz or user can scroll down. The next button won't be apear until they click the answer for the first question. Then it will show them in green for correct answer and red for wrong answer and next button will appear on the screen to go to the next question. After finishing all the questions, it will show them the score they have got out of 10 and restart button will show to play again. If they want to play again then click the restart button.
 
 ## User Stories
 ### User
 
-1. As a newcomers, I want to know about uk generelly, so I won't stuck with basic things that I don't know about uk.
-2. As a immigrants, I want to pass my life in the uk test, so I can get my uk settlement visa and british passport.
-3. As a foreigners, I want to get a general knowledge about uk and other countries, so I can extend my knowledge.
-4. As a next generation, I want to know about the history of the uk, so I will gain some knowledge about history of uk.
+1. As a newcomers, I want to know about UK generelly, so I won't stuck with basic things that I don't know about UK.
+2. As a immigrants, I want to pass my Life In The UK Test, so I can get my UK settlement visa and british passport.
+3. As a foreigners, I want to get a general knowledge about UK and other countries, so I can extend my knowledge.
+4. As a next generation, I want to know about the history of the UK, so I will gain some knowledge about history of the UK.
 
 ### From Us
-1. As a wesite developer, my plan is to help user's to get some idea's about uk, so they can have some knowledge.
+1. As a wesite developer, my plan is to help user's to get some idea's about UK, so they can have some knowledge.
 2. As a developer, I want user to get access quickly for the quiz and would not struggle how to to go to the quiz page and play, I have put a instruction box, so they can click on the box and find the information about quiz and everything.
 3. As a developer, If the user wants to come back to the home page after entering the quiz page, I have created the external link to go back to the home page, so they can come back again.
 
@@ -24,13 +24,13 @@ This website is about a quiz, related to the uk. The goal and purpose are to pro
 ## Design and Elements
 
 ### Colour
-I used background-colour: antiquewhite for the page, for h1:white for index, for h1:black for quiz, question container color:white.
+I used background-colour: antiquewhite for the pages, h1:white in index page, h1:black for quiz page and question container color:white.
 ### Font
 I used Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif as a font family.
 ### Images
-https://www.pexels.com/photo/question-and-answer-letters-and-an-exclamation-and-question-marks-11183364/
-https://pixabay.com/illustrations/quiz-time-quiz-text-greeting-9163843/ 
-This are the website where I downloaded the images for free.
+1. https://www.pexels.com/photo/question-and-answer-letters-and-an-exclamation-and-question-marks-11183364/
+2. https://pixabay.com/illustrations/quiz-time-quiz-text-greeting-9163843/ 
+* This are the websites, from there I downloaded the images for free.
 ### Anchor links
 I used anchor links inside the nav in header.
 ### Footer
@@ -41,13 +41,14 @@ I used media query to make the website responsive for different divices.
 I used form to make username and submit to play the quiz.
 
 ### Known bugs and unfixed
-I have used a message to appear on the screen after typing username and pressing submit but when I do this for the first time it doesn't show the message and take me to the quiz page straight way and if I submit second time, it shows the message by using the username. I tried to fix this but couldn't. So I have address this to fix this in future.
+I have used a message to appear on the screen after typing username and click on the submit button the message should appear, but when I do this for the first time it doesn't show the message and take me to the quiz page straight way and if I submit second time, it shows the message by using the username. I tried to fix this but couldn't. So I have address this to fix this in future.
 
 ### Favicon
 I used favicon to make the logo of my website. 
-### content 
-Content was written by me but I have got lots of ideas and helps to create this website. I have document this below and I have got instruction box idea from w3schools and changed the things related to my project. 
-### get helps from
+
+### Content 
+Content was written by me but I have got lots of ideas and helps to create this website. I have document this below and I have got instruction box idea from my mentor and used the code from w3school and changed the things related to my project. 
+### Get helps from
 1. From my teacher
 2. From code institute website
 3. From mentor
@@ -88,10 +89,10 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 7. [favicon](https://favicon.io/)
 
 ### terget audience
-1. Newcommer
+1. Newcommers
 2. Forigners
 3. Immigrants
-4. future generation
+4. Future Generation
 
 
 ### HTML validator
@@ -123,11 +124,11 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ### Test Plan
 1. on the main page, should be a username and submit button to go to the quiz page.
-2. username should be requir and after submit a message should indicate by using your username.
+2. username should be requir and after clicking the submit button a message should indicate by using your username.
 3. on the main page there should be a instruction button for informatio of the quiz and button should be on click.
 4. in the quiz page there should be the link for to go back to the home page.
 5. questions should be randomise.
-6. after clicking the first questions answer next button will appear, otherwise next button should be hidden.
+6. after clicking the first question answer, next button will appear, otherwise next button should be hidden.
 7. after finishing all the questions a message will appear to tell you your score and restart the quiz button will display.
 
 
