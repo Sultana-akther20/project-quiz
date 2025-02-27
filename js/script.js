@@ -216,6 +216,7 @@
                 $btn.prop("disabled", true);
             });
             $nextElement.show();
+        
         };
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
