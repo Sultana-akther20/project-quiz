@@ -202,7 +202,9 @@
                 score++;
             } else {
                 $selectedBtn.addClass("incorrect");
-                
+                if ($("#error-message").length ===0){
+                    $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
+                }
             }
             //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
             $answerElement.children().each(function () {
