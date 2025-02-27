@@ -202,6 +202,7 @@
                 score++;
             } else {
                 $selectedBtn.addClass("incorrect");
+                
             }
             //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
             $answerElement.children().each(function () {
