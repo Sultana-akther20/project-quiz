@@ -1,6 +1,6 @@
 //check html document fully loaded
- //$(document).on("DOMContentLoaded", function() {
- $(document).ready(function(){
+ $(document).on("DOMContentLoaded", function() {
+ //$(document).ready(function(){
     console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
@@ -12,6 +12,12 @@
             $form.on("submit", function (e) {
                 e.preventDefault();
                 const userName = $("#username").val();
+                if (!userName){
+                    $("#error").text("Please enter your username.").show();
+                }else{
+                    $("#error").hide();
+                
+                }
                 if (userName) {
                     alert(`Welcome ${userName} to the quiz about UK.`);
             
@@ -21,6 +27,7 @@
                 });
         }
     }
+    
     //This code is from w3schools
     // Get the modal
     const $modal = $("#myModal");
