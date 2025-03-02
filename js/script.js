@@ -1,33 +1,38 @@
 //check html document fully loaded
  $(document).on("DOMContentLoaded", function() {
- //$(document).ready(function(){
+ 
+    try{ 
     console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
+    console.log("current page", currentPage);
     if (currentPage.includes("index.html")) {
-
+       
+        console.log("on indexpage");
         //act the form on submition behavior, check the typed username and display a wellcome message to start the quiz
         const $form = $("#form");
-        if ($form.length) {
-            $form.on("submit", function (e) {
+        if ($form.length === 0) {
+            console.log("form not found");
+        }else{
+            console.log("form found");
+            $(document).on("submit", "#form", function (e) {
                 e.preventDefault();
+                console.log("form tiggered");
                 const userName = $("#username").val();
                 if (!userName){
                     $(".error").text("Please enter your username.").show();
+                    return;
                 }else{
                     $(".error").hide();
                 
                 }
-                if (userName) {
                     alert(`Welcome ${userName} to the quiz about UK.`);
-            
+                    console.log("form submited");
                         window.location.href = "quiz.html";
-                    }
                 
                 });
         }
     }
-    
     //This code is from w3schools
     // Get the modal
     const $modal = $("#myModal");
@@ -50,6 +55,7 @@
     });
     //check the current page
     if (currentPage.includes("quiz.html")) {
+        console.log("on quiz page");
 
         //used array to set the question and answer
         const quiz = [{
@@ -191,6 +197,7 @@
         const resetFunction = () => {
             $nextElement.hide();
             $answerElement.empty();
+            $("#error-message").remove();
         };
 
         //this function check the answer is true or false and set the colour as sets and increment the scores
@@ -200,12 +207,17 @@
             if (isCorrect) {
                 $selectedBtn.addClass("correct");
                 score++;
+                $answerElement.children().prop("disabled", true);
+                $nextElement.show();
             } else {
                 $selectedBtn.addClass("incorrect");
-                if ($("#error-message").length ===0){
+                if ($("#error-message").length === 0){
                     $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
                 }
             }
+        };
+        
+            
             //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
             $answerElement.children().each(function () {
                 const $btn = $(this);
@@ -240,7 +252,10 @@
         //start the quiz after script is loaded
         startQuiz();
     }
+} catch (error){
+    console.error("An error occoured", error);
+}
 });
 //for testinhg
-module.exports = { showScore };
+//Module.exports = { showScore };
 
