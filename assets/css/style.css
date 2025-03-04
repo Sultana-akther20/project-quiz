@@ -231,7 +231,7 @@ label {
 }
 
 .incorrect {
-    background: red;
+    background: red !important;
 }
 
 /*media query for mobile*/

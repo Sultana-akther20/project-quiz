@@ -1,7 +1,5 @@
 //check html document fully loaded
  $(document).on("DOMContentLoaded", function() {
- 
-    try{ 
     console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
@@ -210,6 +208,8 @@
                 $answerElement.children().prop("disabled", true);
                 $nextElement.show();
             } else {
+                //$selectedBtn.removeClass("incorrect");
+               // void $selectedBtn[0].offsetWidth;
                 $selectedBtn.addClass("incorrect");
                 if ($("#error-message").length === 0){
                     $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
@@ -219,17 +219,9 @@
         
             
             //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
-            $answerElement.children().each(function () {
-                const $btn = $(this);
-                if ($btn.data("correct")) {
-                    $btn.addClass("correct");
-
-                }
-                $btn.prop("disabled", true);
-            });
-            $nextElement.show();
+            
         
-        };
+    
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
@@ -251,10 +243,8 @@
         });
         //start the quiz after script is loaded
         startQuiz();
+    
     }
-} catch (error){
-    console.error("An error occoured", error);
-}
 });
 //for testinhg
 //Module.exports = { showScore };
