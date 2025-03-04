@@ -245,5 +245,5 @@
     }
 });
 //for testinhg
-//Module.exports = { showScore };
+module.exports = { showScore };
 
