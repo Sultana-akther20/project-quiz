@@ -24,6 +24,7 @@
                     $(".error").hide();
                 
                 }
+                localStorage.setItem("userName", userName);
                     alert(`Welcome ${userName} to the quiz about UK.`);
                     console.log("form submited");
                         window.location.href = "quiz.html";
@@ -225,7 +226,7 @@
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
-            $questionElement.text(`you scored ${score} out of ${quiz.length}!`);
+            $questionElement.text(`${userName}, you scored ${score} out of ${quiz.length}!`);
             $nextElement.text("Restart The Quiz").show();
         };
         //restart the quiz on button click if no more question is there
