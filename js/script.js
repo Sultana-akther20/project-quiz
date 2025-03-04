@@ -216,16 +216,13 @@
                     $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
                 }
             }
-        };
-        
-            
-            //enable next button, disebled the buttons after clicking the answer and highlight the correct answer
-            
+        }
         
     
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
+            localStorage.getItem("userName") || "user";
             $questionElement.text(`${userName}, you scored ${score} out of ${quiz.length}!`);
             $nextElement.text("Restart The Quiz").show();
         };
