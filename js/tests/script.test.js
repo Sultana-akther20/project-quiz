@@ -1,4 +1,4 @@
-const $ =require("jquery");
+const $ = require("jquery");
 const {showScore}= require("../script.js");
 const { removeLinesBeforeExternalMatcherTrap } = require("jest-snapshot/build/utils.js");
 

@@ -30,7 +30,7 @@ I used Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif as a font fami
 ### Images
 1. https://www.pexels.com/photo/question-and-answer-letters-and-an-exclamation-and-question-marks-11183364/
 2. https://pixabay.com/illustrations/quiz-time-quiz-text-greeting-9163843/ 
-* This are the websites, from there I downloaded the images for free.
+* These are the websites, from there I downloaded the images for free.
 ### Anchor links
 I used anchor links inside the nav in header.
 ### Footer
