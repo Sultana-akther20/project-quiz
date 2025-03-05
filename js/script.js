@@ -1,37 +1,43 @@
 //check html document fully loaded
- $(document).on("DOMContentLoaded", function() {
-    console.log("jquery is working");
+ //$(document).on("DOMContentLoaded", function() {
+//$(document).ready(function(){ 
+    $(function() {
+        console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
-    if (currentPage.includes("index.html")) {
-       
-        console.log("on indexpage");
+    if (currentPage.includes("index.html") || currentPage === "/") {
+      
         //act the form on submition behavior, check the typed username and display a wellcome message to start the quiz
         const $form = $("#form");
-        if ($form.length === 0) {
-            console.log("form not found");
+        if ($form.length===0) {
+          console.log("form not found"); 
         }else{
-            console.log("form found");
-            $(document).on("submit", "#form", function (e) {
-                e.preventDefault();
-                console.log("form tiggered");
-                const userName = $("#username").val();
-                if (!userName){
-                    $(".error").text("Please enter your username.").show();
-                    return;
-                }else{
-                    $(".error").hide();
+          console.log("form found");
+            $form.on("submit", function(e) {
+            e.preventDefault();
+            console.log("form tiggered");
+            const userName = $("#username").val().trim();
+            if (!userName){
+             $(".error").text("Please enter your username.").show();
+             return;
+             }else{
+                  $(".error").text("").hide();
                 
                 }
                 localStorage.setItem("userName", userName);
                     alert(`Welcome ${userName} to the quiz about UK.`);
-                    console.log("form submited");
-                        window.location.href = "quiz.html";
+                  console.log("form submited");
+                    window.location.href = "quiz.html";
                 
                 });
+
+                // Ensure this is the ONLY script for form validation
+
+   
+    
+}
         }
-    }
     //This code is from w3schools
     // Get the modal
     const $modal = $("#myModal");
@@ -222,7 +228,7 @@
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
-            localStorage.getItem("userName") || "user";
+            const userName = localStorage.getItem("userName") || "user";
             $questionElement.text(`${userName}, you scored ${score} out of ${quiz.length}!`);
             $nextElement.text("Restart The Quiz").show();
         };
@@ -245,5 +251,5 @@
     }
 });
 //for testinhg
-module.exports = { showScore };
+//module.exports = { showScore };
 
