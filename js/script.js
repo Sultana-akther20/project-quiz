@@ -1,5 +1,8 @@
 //check html document fully loaded
  //$(document).on("DOMContentLoaded", function() {
+
+//const { NEXT } = require("symbol-tree/lib/TreeIterator");
+
 //$(document).ready(function(){ 
     $(function() {
         console.log("jquery is working");
@@ -7,7 +10,7 @@
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
     if (currentPage.includes("index.html") || currentPage === "/") {
-      
+     
         //act the form on submition behavior, check the typed username and display a wellcome message to start the quiz
         const $form = $("#form");
         if ($form.length===0) {
@@ -17,7 +20,7 @@
             $form.on("submit", function(e) {
             e.preventDefault();
             console.log("form tiggered");
-            const userName = $("#username").val().trim();
+            const userName = $("#username").val();
             if (!userName){
              $(".error").text("Please enter your username.").show();
              return;
@@ -224,7 +227,16 @@
             }
         }
         
-    
+        /*function showScore(score, quizLength){
+            const questionElement = document.getElementById("question");
+            const nextElement =document.getElementById("next");
+            if (!questionElement || !nextElement){
+                console.error("element not found");
+                return;
+            }
+            questionElement.textContent=`You scored ${score} out of ${quizLength}!`;
+            nextElement.textContent="Restart The Quiz";
+        }*/
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
@@ -250,6 +262,8 @@
     
     }
 });
-//for testinhg
+//for testing
+if (typeof module !== "undefined" && module.exports){
 module.exports = { showScore };
-
+}
+//export {showScore};

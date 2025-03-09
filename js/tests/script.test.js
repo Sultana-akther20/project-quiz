@@ -1,11 +1,16 @@
+/**
+ * @jest-environment jsdom
+ */
 const $ = require("jquery");
-const {showScore}= require("../script.js");
-const { removeLinesBeforeExternalMatcherTrap } = require("jest-snapshot/build/utils.js");
-
-
+global.$ = global.jquery = $;
+//import { showScore } from "../script.js";
+//import { removeLinesBeforeExternalMatcherTrap } from "jest-snapshot/build/utils.js";
+const {showScore}=require("../script.js");
+//const { removeLinesBeforeExternalMatcherTrap } = require("jest-snapshot/build/utils.js");
+//import { showScore } from "../script.js";
    
     describe("showScore function", () => {
-        removeLinesBeforeExternalMatcherTrap(() =>{
+        beforeEach(() =>{
         document.body.innerHTML = `<div id = 'question'></div><button id ='next'></button>`;
         });
         test("should show the score after finishing the quiz", () =>{
@@ -21,6 +26,7 @@ const { removeLinesBeforeExternalMatcherTrap } = require("jest-snapshot/build/ut
             expect($nextElement.css("display")).not.toBe("none");
         });
     });
+    
     
 
     
