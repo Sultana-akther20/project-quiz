@@ -1,10 +1,8 @@
 {
   "devDependencies": {
     "jest": "^26.6.3",
-    "jquery": "^3.7.1"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
+    "jquery": "^3.7.1",
+    "jsdom": "^26.0.0"
   },
   "name": "project-quiz",
   "version": "1.0.0",
@@ -182,7 +180,6 @@
     "jest-worker": "^26.6.2",
     "js-tokens": "^4.0.0",
     "js-yaml": "^3.14.1",
-    "jsdom": "^16.7.0",
     "jsesc": "^3.1.0",
     "json-parse-even-better-errors": "^2.3.1",
     "json5": "^2.2.3",
@@ -344,6 +341,9 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "author": "",
   "license": "ISC"

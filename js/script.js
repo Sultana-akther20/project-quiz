@@ -35,11 +35,7 @@
                 
                 });
 
-                // Ensure this is the ONLY script for form validation
-
-   
-    
-}
+            }
         }
     //This code is from w3schools
     // Get the modal
@@ -227,22 +223,13 @@
             }
         }
         
-        /*function showScore(score, quizLength){
-            const questionElement = document.getElementById("question");
-            const nextElement =document.getElementById("next");
-            if (!questionElement || !nextElement){
-                console.error("element not found");
-                return;
-            }
-            questionElement.textContent=`You scored ${score} out of ${quizLength}!`;
-            nextElement.textContent="Restart The Quiz";
-        }*/
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
-        const showScore = () => {
+        const showScore = (score, quizLength) => {
             resetFunction();
             const userName = localStorage.getItem("userName") || "user";
-            $questionElement.text(`${userName}, you scored ${score} out of ${quiz.length}!`);
-            $nextElement.text("Restart The Quiz").show();
+
+            $("#question").text(`${userName}, you scored ${score} out of ${quiz.length}!`);
+            $("#next").text("Restart The Quiz").show();
         };
         //restart the quiz on button click if no more question is there
         $nextElement.on("click", function () {
