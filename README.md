@@ -108,7 +108,7 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 
 ### JSHint for JavaScript
-
+I have checked JavaScript code in JSHint to validate. I checked all the button from CONFIGURE that I have used in my code. Before it was showing that some variable were not define then after checking all the buttons it defined now. 
 
 
 ![Image](https://github.com/user-attachments/assets/95e4a8dc-94ed-4d8e-aaf4-5baac72bc7af)
