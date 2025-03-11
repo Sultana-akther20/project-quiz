@@ -1,8 +1,5 @@
 //check html document fully loaded
  //$(document).on("DOMContentLoaded", function() {
-
-//const { NEXT } = require("symbol-tree/lib/TreeIterator");
-
 //$(document).ready(function(){ 
     $(function() {
         console.log("jquery is working");
@@ -221,10 +218,10 @@
                     $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
                 }
             }
-        }
+        };
         
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
-        const showScore = (score, quizLength) => {
+        const showScore = () => {
             resetFunction();
             const userName = localStorage.getItem("userName") || "user";
 
@@ -253,4 +250,4 @@
 if (typeof module !== "undefined" && module.exports){
 module.exports = { showScore };
 }
-//export {showScore};
+
