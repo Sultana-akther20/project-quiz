@@ -277,10 +277,8 @@ Screenshot:
 
 ### ScreenShots of the pages
 
-![Image](https://github.com/user-attachments/assets/955ddef7-4c13-45cd-8afb-aae7d3923f3f)
+![Image](https://github.com/user-attachments/assets/3b5f9916-87e7-4f4d-893a-65376489eb57)
 
-![Image](https://github.com/user-attachments/assets/349d0874-c1b4-4d00-80e7-20ac033a04cf)
+![Image](https://github.com/user-attachments/assets/83be1332-782c-427a-95e2-e128af63f3f3)
 
-![Image](https://github.com/user-attachments/assets/a281fc72-0086-41f5-862e-1eb28e17477b)
-
-
+![Image](https://github.com/user-attachments/assets/ca8c6b38-25e4-4c67-a405-b642c522b586)
