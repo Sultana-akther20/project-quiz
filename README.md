@@ -109,7 +109,21 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 
 ### JSHint for JavaScript
 
-![Image](https://github.com/user-attachments/assets/59071b24-4ab9-4095-aa05-25c74f2e414c)
+
+
+![Image](https://github.com/user-attachments/assets/95e4a8dc-94ed-4d8e-aaf4-5baac72bc7af)
+
+![Image](https://github.com/user-attachments/assets/1e91548a-d2ea-4b26-9c70-514b158df6d9)
+
+![Image](https://github.com/user-attachments/assets/2c113920-32c3-4396-b3f4-cfde69f86d28)
+
+![Image](https://github.com/user-attachments/assets/029a91cd-5676-4fec-90e8-4e84fc3f2790)
+
+![Image](https://github.com/user-attachments/assets/45f74c20-1ebd-40e9-bc1d-c0b6a7ed3dd5)
+
+![Image](https://github.com/user-attachments/assets/fa6ecfee-b154-4b8e-831a-d283710ec65e)
+
+![Image](https://github.com/user-attachments/assets/c96809b4-6e52-4b6c-ad9f-2cc14d506819)
 
 ### Lighthouse
 
