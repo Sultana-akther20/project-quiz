@@ -210,6 +210,7 @@
             const isCorrect = $selectedBtn.data("correct");
             if (isCorrect) {
                 $selectedBtn.addClass("correct");
+                $("#error-message").remove();
                 if (isCorrectFirstAttempt){ 
                 score++;
                 }
@@ -222,7 +223,10 @@
                 isCorrectFirstAttempt = false;
                 if ($("#error-message").length === 0){
                     $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
+                }else{
+                    $("#error-message").show();
                 }
+                
             }
         };
         
