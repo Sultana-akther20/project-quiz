@@ -160,6 +160,8 @@
         //set the variables to start from 0
         let currentIndex = 0;
         let score = 0;
+        let wrongAnswer = 0;
+        let isCorrectFirstAttempt=true;
 
         //randomise the questions
         const randomQuestion = () => {
@@ -178,6 +180,7 @@
         //function for showing question, reset the previous state and display the question
         const showQuestion = () => {
             resetFunction();
+            isCorrectFirstAttempt=true;
             const currentQuestion = quiz[currentIndex];
             const questionNo = currentIndex + 1;
             $questionElement.text(`${questionNo}. ${currentQuestion.question}`);
@@ -207,13 +210,16 @@
             const isCorrect = $selectedBtn.data("correct");
             if (isCorrect) {
                 $selectedBtn.addClass("correct");
+                if (isCorrectFirstAttempt){ 
                 score++;
+                }
                 $answerElement.children().prop("disabled", true);
                 $nextElement.show();
             } else {
                 //$selectedBtn.removeClass("incorrect");
                // void $selectedBtn[0].offsetWidth;
                 $selectedBtn.addClass("incorrect");
+                isCorrectFirstAttempt = false;
                 if ($("#error-message").length === 0){
                     $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
                 }
@@ -223,6 +229,8 @@
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
+            wrongAnswer = quiz.length-score;
+
             const userName = localStorage.getItem("userName") || "user";
 
             $("#question").text(`${userName}, you scored ${score} out of ${quiz.length}!`);
