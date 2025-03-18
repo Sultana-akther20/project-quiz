@@ -268,6 +268,25 @@ Screenshot:
 * screenshot:
 ![Image](https://github.com/user-attachments/assets/67c2f925-77a9-497b-8294-a68cc32ab3d5)
 
+#### test no. 13
+* description: I'm testing if the website responsive of the different devices.
+* expected outcome: It should test the responsiveness of the different devices.
+* actual outcome: It works as expected.
+* error: No
+* screenshot:
+![Image](https://github.com/user-attachments/assets/b960ba70-e011-410f-a67d-4b7d1e1f560e)
+
+![Image](https://github.com/user-attachments/assets/b6a7c0f5-7182-4dae-bf79-423af2765290)
+
+![Image](https://github.com/user-attachments/assets/1e3eaac0-0010-4457-b103-dfa207e5de74)
+
+![Image](https://github.com/user-attachments/assets/4e9e24fb-9b5f-4f7f-b936-aa2b9d43fa29)
+
+![Image](https://github.com/user-attachments/assets/d85c5c19-f25d-4a6f-860b-1c7967eb6a36)
+
+![Image](https://github.com/user-attachments/assets/43c9d1d4-d66f-41f0-9e0d-9aeee9506325)
+
+
 ### Gantt chart
 
 ![Image](https://github.com/user-attachments/assets/f9fa5c31-80b5-49c9-8c45-5161a7d6bbb9)
