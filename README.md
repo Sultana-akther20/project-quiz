@@ -80,13 +80,13 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript),
 
 ### frameworks libraries and programme used
-1. [Font Awesome Kit](https://fontawesome.com/),
-2. [git](https://git-scm.com/),
-3. [github](https://github.com/),
-4. [Figma](https://www.figma.com/),
-5. [w3school](https://www.w3schools.com/)
-6. [jQuery](https://jquery.com/)
-7. [favicon](https://favicon.io/)
+1. [Font Awesome Kit](https://fontawesome.com/) I used this in the footer to use social media icons.
+2. [git](https://git-scm.com/) I used this to commit messages in terminal.
+3. [github](https://github.com/) I used this to create repository, links to VScode etc.
+4. [Figma](https://www.figma.com/) I used this to create wareframe.
+5. [w3school](https://www.w3schools.com/) I used this to show the instruction in the main page.
+6. [jQuery](https://jquery.com/) I used jQuery library in quiz page.
+7. [favicon](https://favicon.io/) I used this to create a logo related to my website and used this in both page.
 
 ### terget audience
 1. Newcommers
