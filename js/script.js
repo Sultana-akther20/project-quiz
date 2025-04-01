@@ -66,7 +66,8 @@
                 { text: "Birmingham", correct: false },
                 { text: "Luton", correct: false },
                 { text: "Manchester", correct: false },
-            ]
+            ],
+            explanation: "London is the capital city of England."
         },
         {
             question: "What is the currency in the UK?",
@@ -75,7 +76,8 @@
                 { text: "Pounds Sterling", correct: true },
                 { text: "Dollar", correct: false },
                 { text: "Taka", correct: false },
-            ]
+            ],
+            explanation: "UK's currency is Pound Sterling."
         },
         {
             question: "What is UK's timezone?",
@@ -84,7 +86,8 @@
                 { text: "EST", correct: false },
                 { text: "CET", correct: false },
                 { text: "PST", correct: false },
-            ]
+            ],
+            explanation: "UK's timezone in GMT."
         },
         {
             question: "What does BBC stand for?",
@@ -93,7 +96,8 @@
                 { text: "British Baking Contest", correct: false },
                 { text: "Best Broadcasting Channel", correct: false },
                 { text: "British Broadcasting Corporation", correct: true },
-            ]
+            ],
+            explanation: "BBC stand for British Broadcasting Corporation."
         },
         {
             question: "When is Halloween?",
@@ -102,7 +106,8 @@
                 { text: "14 FEB", correct: false },
                 { text: "31 OCT", correct: true },
                 { text: "25 DEC", correct: false },
-            ]
+            ],
+            explanation: "Halloween is on 31 of October."
         },
         {
             question: "What is the largest country in the UK?",
@@ -111,7 +116,8 @@
                 { text: "England", correct: true },
                 { text: "Wales", correct: false },
                 { text: "Scotland", correct: false },
-            ]
+            ],
+            explanation: "England is the largest country in the UK."
         },
         {
             question: "What is the name of the corrent king?",
@@ -120,7 +126,8 @@
                 { text: "King George VI", correct: false },
                 { text: "King Charles III", correct: true },
                 { text: "King Edward VIII", correct: false },
-            ]
+            ],
+            explanation: "King Charles III is the current king."
         },
         {
             question: "When did queen Elizabeth the II died?",
@@ -129,25 +136,28 @@
                 { text: "1952", correct: false },
                 { text: "1990", correct: false },
                 { text: "2022", correct: true },
-            ]
+            ],
+            explanation: "Queen Elizabeth the II died in 2022."
         },
         {
-            question: "How many countries are with uk?",
+            question: "How many countries are with UK?",
             answers: [
                 { text: "3", correct: false },
                 { text: "4", correct: true },
                 { text: "6", correct: false },
                 { text: "5", correct: false },
-            ]
+            ],
+            explanation: "There are 4 countries with UK."
         },
         {
-            question: "How many years did Queen Elizabeth II rule?",
+            question: "How many years did Queen Elizabeth the II rule?",
             answers: [
                 { text: "Over 70 years", correct: true },
                 { text: "71 years", correct: false },
                 { text: "60 years", correct: false },
                 { text: "over 65years", correct: false },
-            ]
+            ],
+            explanation: "Queen Elizabeth the II ruled over 70 years."
         }
 
         ];
