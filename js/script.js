@@ -1,43 +1,39 @@
 //check html document fully loaded
- //$(document).on("DOMContentLoaded", function() {
-//$(document).ready(function(){ 
-    $(function() {
-        console.log("jquery is working");
+$(function () {
+    console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
     if (currentPage.includes("index.html") || currentPage === "/") {
-     
+
         //act the form on submition behavior, check the typed username and display a wellcome message to start the quiz
         const $form = $("#form");
-        if ($form.length===0) {
-          console.log("form not found"); 
-        }else{
-          console.log("form found");
-            $form.on("submit", function(e) {
-            e.preventDefault();
-            console.log("form tiggered");
-            const userName = $("#username").val();
-            if (!userName){
-             $(".error").text("Please enter your username.").show();
-             return;
-             }else{
-                  $(".error").text("").hide();
-                
+        if ($form.length === 0) {
+            console.log("form not found");
+        } else {
+            console.log("form found");
+            $form.on("submit", function (e) {
+                e.preventDefault();
+                console.log("form tiggered");
+                const userName = $("#username").val();
+                if (!userName) {
+                    $(".error").text("Please enter your username.").show();
+                    return;
+                } else {
+                    $(".error").text("").hide();
+
                 }
                 localStorage.setItem("userName", userName);
-                    alert(`Welcome ${userName} to the quiz about UK.`);
-                  console.log("form submited");
-                    window.location.href = "quiz.html";
-                
-                });
-
-            }
+                alert(`Welcome ${userName} to the quiz about UK.`);
+                console.log("form submited");
+                window.location.href = "quiz.html";
+            });
         }
+    }
     //This code is from w3schools
     // Get the modal
     const $modal = $("#myModal");
-    
+
     // When the user clicks on the button, open the modal
     $("#myBtn").on("click", function () {
         $modal.show();
@@ -159,7 +155,6 @@
             ],
             explanation: "Queen Elizabeth the II ruled over 70 years."
         }
-
         ];
 
         //connecting javascript to html
@@ -171,7 +166,7 @@
         let currentIndex = 0;
         let score = 0;
         let wrongAnswer = 0;
-        let isCorrectFirstAttempt=true;
+        let isCorrectFirstAttempt = true;
 
         //randomise the questions
         const randomQuestion = () => {
@@ -190,7 +185,7 @@
         //function for showing question, reset the previous state and display the question
         const showQuestion = () => {
             resetFunction();
-            isCorrectFirstAttempt=true;
+            isCorrectFirstAttempt = true;
             const currentQuestion = quiz[currentIndex];
             const questionNo = currentIndex + 1;
             $questionElement.text(`${questionNo}. ${currentQuestion.question}`);
@@ -229,41 +224,37 @@
                 $nextElement.show();
             } else {
                 $selectedBtn.addClass("incorrect");
-                $answerElement.children().each(function(){
-                    if ($(this).data("correct")){
+                $answerElement.children().each(function () {
+                    if ($(this).data("correct")) {
                         $(this).addClass("correct");
                     }
                 });
                 $("#error-message, #explanation").remove();
                 // if ($("#error-message").length === 0){
-                    $("<p id='error-message' class='error-text'>Wrong answer</p>").appendTo($answerElement);
+                $("<p id='error-message' class='error-text'>Wrong answer</p>").appendTo($answerElement);
                 //}else{
-                    //$("#error-message").text("Wrong answer").show();
+                //$("#error-message").text("Wrong answer").show();
                 //}
                 //if ($("#explanation").length===0){
-                    $("<p id='explanation' class='explanation-text'>" + currentQuestion.explanation + "</p>").appendTo($answerElement);
+                $("<p id='explanation' class='explanation-text'>" + currentQuestion.explanation + "</p>").appendTo($answerElement);
                 //}else{
-                    //$("#explanation").text(currentQuestion.explanation).show();
+                //$("#explanation").text(currentQuestion.explanation).show();
                 //}
-                
+
                 isCorrectFirstAttempt = false;
                 $nextElement.show();
-            } 
-            
+            }
         };
-            
-        
-                
+
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
-            wrongAnswer = quiz.length-score;
-
+            wrongAnswer = quiz.length - score;
             const userName = localStorage.getItem("userName") || "user";
-
             $("#question").text(`${userName}, you scored ${score} out of ${quiz.length}!`);
             $("#next").text("Restart The Quiz").show();
         };
+
         //restart the quiz on button click if no more question is there
         $nextElement.on("click", function () {
             if ($nextElement.text() === "Restart The Quiz") {
@@ -277,13 +268,14 @@
                 }
             }
         });
+
         //start the quiz after script is loaded
         startQuiz();
-    
     }
 });
+
 //for testing
-if (typeof module !== "undefined" && module.exports){
-module.exports = { showScore };
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = { showScore };
 }
 
