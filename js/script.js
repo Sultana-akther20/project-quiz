@@ -218,28 +218,42 @@
         const selectAnswer = (e) => {
             const $selectedBtn = $(e.target);
             const isCorrect = $selectedBtn.data("correct");
+            const currentQuestion = quiz[currentIndex];
+
+            $answerElement.children().prop("disabled", true);
             if (isCorrect) {
                 $selectedBtn.addClass("correct");
-                $("#error-message").remove();
-                if (isCorrectFirstAttempt){ 
                 score++;
-                }
-                $answerElement.children().prop("disabled", true);
+                //}
+                //$answerElement.children().prop("disabled", true);
                 $nextElement.show();
             } else {
-                //$selectedBtn.removeClass("incorrect");
-               // void $selectedBtn[0].offsetWidth;
                 $selectedBtn.addClass("incorrect");
-                isCorrectFirstAttempt = false;
-                if ($("#error-message").length === 0){
-                    $("<p id='error-message'>Wrong answer, try again!</p>").insertAfter($answerElement);
-                }else{
-                    $("#error-message").show();
-                }
+                $answerElement.children().each(function(){
+                    if ($(this).data("correct")){
+                        $(this).addClass("correct");
+                    }
+                });
+                $("#error-message, #explanation").remove();
+                // if ($("#error-message").length === 0){
+                    $("<p id='error-message' class='error-text'>Wrong answer</p>").appendTo($answerElement);
+                //}else{
+                    //$("#error-message").text("Wrong answer").show();
+                //}
+                //if ($("#explanation").length===0){
+                    $("<p id='explanation' class='explanation-text'>" + currentQuestion.explanation + "</p>").appendTo($answerElement);
+                //}else{
+                    //$("#explanation").text(currentQuestion.explanation).show();
+                //}
                 
-            }
+                isCorrectFirstAttempt = false;
+                $nextElement.show();
+            } 
+            
         };
+            
         
+                
         //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();

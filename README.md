@@ -85,7 +85,7 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 3. [github](https://github.com/) I used this to create repository, links to VScode etc.
 4. [Figma](https://www.figma.com/) I used this to create wareframe.
 5. [w3school](https://www.w3schools.com/) I used this to show the instruction in the main page.
-6. [jQuery](https://jquery.com/) I used jQuery library in javaScript.
+6. [jQuery](https://jquery.com/) I used jQuery library in script.js.
 7. [favicon](https://favicon.io/) I used this to create a logo related to my website and used this in both page.
 
 ### terget audience
