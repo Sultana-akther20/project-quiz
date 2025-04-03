@@ -208,7 +208,7 @@ $(function () {
             $("#error-message").remove();
         };
 
-        //this function check the answer is true or false and set the colour as sets, increment the scores and give the error massage and explanation.
+        //this function check the answer is true or false and set the colour as sets, increment the scores and give the error message and explanation.
         const selectAnswer = (e) => {
             const $selectedBtn = $(e.target);
             const isCorrect = $selectedBtn.data("correct");
@@ -237,7 +237,7 @@ $(function () {
             }
         };
 
-        //showScore showes the final score in a message after clearing the state and restart the quiz button instead of next
+        //showScore shows the final score in a message after clearing the state and restart the quiz button instead of next
         const showScore = () => {
             resetFunction();
             wrongAnswer = quiz.length - score;
