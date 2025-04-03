@@ -228,7 +228,7 @@ $(function () {
                 });
                 $("#error-message, #explanation").remove();
                 
-                $("<p id='error-message' class='error-text'>Wrong answer</p>").appendTo($answerElement);
+                $("<p id='error-message' class='error-text'>Oops! Wrong answer. Here is the explanation:</p>").appendTo($answerElement);
                 
                 $("<p id='explanation' class='explanation-text'>" + currentQuestion.explanation + "</p>").appendTo($answerElement);
 
