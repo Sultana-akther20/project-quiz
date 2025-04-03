@@ -110,20 +110,17 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 ### JSHint for JavaScript
 I have checked JavaScript code in JSHint to validate. I checked all the button from CONFIGURE that I have used in my code. Before it was showing that some variable were not define then after checking all the buttons it defined now. 
 
+![Image](https://github.com/user-attachments/assets/f074a69c-f66e-4b36-961c-73da46db8e51)
 
-![Image](https://github.com/user-attachments/assets/95e4a8dc-94ed-4d8e-aaf4-5baac72bc7af)
+![Image](https://github.com/user-attachments/assets/c0b07f49-bc0c-4302-942d-d7f7f2596027)
 
-![Image](https://github.com/user-attachments/assets/1e91548a-d2ea-4b26-9c70-514b158df6d9)
+![Image](https://github.com/user-attachments/assets/3bd44058-a8d4-4825-8b13-ce7cc52e405a)
 
-![Image](https://github.com/user-attachments/assets/2c113920-32c3-4396-b3f4-cfde69f86d28)
+![Image](https://github.com/user-attachments/assets/a79f151f-cfee-4040-ae2f-512f708d7a64)
 
-![Image](https://github.com/user-attachments/assets/029a91cd-5676-4fec-90e8-4e84fc3f2790)
+![Image](https://github.com/user-attachments/assets/a6abbe3f-fc6d-4273-8807-e767f873d934)
 
-![Image](https://github.com/user-attachments/assets/45f74c20-1ebd-40e9-bc1d-c0b6a7ed3dd5)
-
-![Image](https://github.com/user-attachments/assets/fa6ecfee-b154-4b8e-831a-d283710ec65e)
-
-![Image](https://github.com/user-attachments/assets/c96809b4-6e52-4b6c-ad9f-2cc14d506819)
+![Image](https://github.com/user-attachments/assets/7ab45af1-0ac7-44bd-ad2d-c537a595a28e)
 
 ### Lighthouse
 

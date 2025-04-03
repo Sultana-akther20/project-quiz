@@ -1,10 +1,13 @@
 /**
  * @jest-environment jsdom
  */
+global.TextEncoder = require("util").TextEncoder;
+global.TextDecoder = require("util").TextDecoder;
 const {JSDOM}=require("jsdom");
-const {showScore} = require("../script.js");
+const $ = require("jquery");
+//const {showScore} = require("../script.js");
 const dom = new JSDOM(`<!DOCTYPE html><html><body><div id= "question"></div><button id="next"></button></body></html>`);
-const $ = require("jquery")(new JSDOM(`<!DOCTYPE html><html><body></body></html>`).window);
+//const $ = require("jquery")(new JSDOM(`<!DOCTYPE html><html><body></body></html>`).window);
 //const $ = require("jquery");
 global.window = dom.window;
 global.document=dom.window.document;
@@ -17,7 +20,7 @@ if (!script.showScore){
     throw new Error("showscore is not define");
 }
 const {showScore} = script;*/
-   
+   const {showScore} =require("../script.js");
     describe("showScore function", () => {
         beforeEach(() =>{
         document.body.innerHTML = `<div id = 'question'></div><button id ='next'></button>`;

@@ -1,6 +1,5 @@
 //check html document fully loaded
 $(function () {
-    console.log("jquery is working");
     //gets the current pages file name
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
@@ -209,7 +208,7 @@ $(function () {
             $("#error-message").remove();
         };
 
-        //this function check the answer is true or false and set the colour as sets and increment the scores
+        //this function check the answer is true or false and set the colour as sets, increment the scores and give the error massage and explanation.
         const selectAnswer = (e) => {
             const $selectedBtn = $(e.target);
             const isCorrect = $selectedBtn.data("correct");
@@ -219,8 +218,6 @@ $(function () {
             if (isCorrect) {
                 $selectedBtn.addClass("correct");
                 score++;
-                //}
-                //$answerElement.children().prop("disabled", true);
                 $nextElement.show();
             } else {
                 $selectedBtn.addClass("incorrect");
@@ -230,16 +227,10 @@ $(function () {
                     }
                 });
                 $("#error-message, #explanation").remove();
-                // if ($("#error-message").length === 0){
+                
                 $("<p id='error-message' class='error-text'>Wrong answer</p>").appendTo($answerElement);
-                //}else{
-                //$("#error-message").text("Wrong answer").show();
-                //}
-                //if ($("#explanation").length===0){
+                
                 $("<p id='explanation' class='explanation-text'>" + currentQuestion.explanation + "</p>").appendTo($answerElement);
-                //}else{
-                //$("#explanation").text(currentQuestion.explanation).show();
-                //}
 
                 isCorrectFirstAttempt = false;
                 $nextElement.show();
