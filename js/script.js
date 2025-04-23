@@ -33,15 +33,17 @@ $(function () {
 
                 document.getElementById("form").addEventListener("submit", function(e) {
                     e.preventDefault();
+                    console.log("form detected");
                     const userName = document.getElementById("username").value;
                     if (!userName) {
+                        console.log("username empty");
                         document.querySelector(".error").textContent = "Please enter your username.";
                         document.querySelector(".error").style.display = "block";
                         return;
                     }
                     localStorage.setItem("userName", userName);
                     alert(`Welcome ${userName} to the quiz about UK.`);
-                    
+                    console.log("navigate the quiz page");
                     // Navigate to quiz page
                     window.location.href = "quiz.html";
                 });
