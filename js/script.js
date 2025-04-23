@@ -1,5 +1,16 @@
 //check html document fully loaded
 $(function () {
+    //$(document).ready(function() {
+        console.log("Document ready");
+        console.log("jQuery version:", $.fn.jquery);
+        console.log("Current URL:", window.location.href);
+        console.log("Form exists:", $("#form").length > 0);
+        
+        // Test if click events are working
+        $("button[type='submit']").on("click", function() {
+            console.log("Submit button clicked");
+        });
+    
     //gets the current pages file name
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
