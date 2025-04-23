@@ -5,7 +5,7 @@
     //gets the current pages file name
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
-    if (currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/project-quiz/")) {
+    if (currentPage.includes("index.html") || currentPage.endsWith("/project-quiz") || currentPage === "/") {
 
         //act the form on submition behavior, check the typed username and display a wellcome message to start the quiz
         const $form = $("#form");
