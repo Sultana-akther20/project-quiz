@@ -1,7 +1,5 @@
 //check html document fully loaded
-//$(function () {
-    //$(document).ready(function() {
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     //gets the current pages file name
     const currentPage = window.location.pathname;
     console.log("current page", currentPage);
@@ -20,7 +18,7 @@
                     //alert("Please enter your username!");
                     $(".error").text("Please enter your username!").show();
                     return;
-                }else{
+                } else {
                     $(".error").text("").hide();
                 }
                 localStorage.setItem("userName", userName);
@@ -32,7 +30,7 @@
             });
         }
     }
-    
+
     //This code is from w3schools
     // Get the modal
     const $modal = $("#myModal");
@@ -231,9 +229,9 @@
                     }
                 });
                 $("#error-message, #explanation").remove();
-                
+
                 $("<p id='error-message' class='error-text'>Oops! Wrong answer. Here is the explanation:</p>").appendTo($answerElement);
-                
+
                 $("<p id='explanation' class='explanation-text'>" + currentQuestion.explanation + "</p>").appendTo($answerElement);
 
                 isCorrectFirstAttempt = false;
