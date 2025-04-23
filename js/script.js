@@ -15,9 +15,13 @@
             console.log("form found");
             $form.on("submit", function (e) {
                 e.preventDefault();
-                console.log("form tiggered");
                 const userName = $("#username").val();
-                
+                if (!userName) {
+                    alert("Please enter your username!");
+                    return;
+                }else{
+                    $(".error").text("").hide();
+                }
                 localStorage.setItem("userName", userName);
                 alert(`Welcome ${userName} to the quiz about UK.`);
                 console.log("form submited");
