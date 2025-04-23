@@ -1,6 +1,7 @@
 //check html document fully loaded
-$(function () {
+//$(function () {
     //$(document).ready(function() {
+    document.addEventListener("DOMContentLoaded", function() {
         console.log("Document ready");
         console.log("jQuery version:", $.fn.jquery);
         console.log("Current URL:", window.location.href);
@@ -22,7 +23,7 @@ $(function () {
             console.log("form not found");
         } else {
             console.log("form found");
-            /*$form.on("submit", function (e) {
+            $form.on("submit", function (e) {
                 e.preventDefault();
                 console.log("form tiggered");
                 const userName = $("#username").val();
@@ -40,27 +41,14 @@ $(function () {
                 //const baseUrl = window.location.pathname.includes('/project-quiz/') ? 
                    //'/project-quiz/' : '/';
                 //window.location.href = baseUrl + "quiz.html";
-                window.location.href = "quiz.html";*/
+                window.location.href = "quiz.html";
 
-                document.getElementById("form").addEventListener("submit", function(e) {
-                    e.preventDefault();
-                    console.log("form detected");
-                    const userName = document.getElementById("username").value;
-                    if (!userName) {
-                        console.log("username empty");
-                        document.querySelector(".error").textContent = "Please enter your username.";
-                        document.querySelector(".error").style.display = "block";
-                        return;
-                    }
-                    localStorage.setItem("userName", userName);
-                    alert(`Welcome ${userName} to the quiz about UK.`);
-                    console.log("navigate the quiz page");
-                    // Navigate to quiz page
-                    window.location.href = "quiz.html";
-                });
-            //});
+               
+            
+            });
         }
     }
+    
     //This code is from w3schools
     // Get the modal
     const $modal = $("#myModal");
