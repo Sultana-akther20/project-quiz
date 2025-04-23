@@ -17,7 +17,8 @@
                 e.preventDefault();
                 const userName = $("#username").val();
                 if (!userName) {
-                    alert("Please enter your username!");
+                    //alert("Please enter your username!");
+                    $(".error").text("Please enter your username!").show();
                     return;
                 }else{
                     $(".error").text("").hide();
