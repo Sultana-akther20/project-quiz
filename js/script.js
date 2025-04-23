@@ -25,7 +25,12 @@ $(function () {
                 localStorage.setItem("userName", userName);
                 alert(`Welcome ${userName} to the quiz about UK.`);
                 console.log("form submited");
-                window.location.href = "quiz.html";
+
+                const baseUrl = window.location.pathname.includes('/project-quiz/') ? 
+                   '/project-quiz/' : '/';
+                window.location.href = baseUrl + "quiz.html";
+                //window.location.href = "quiz.html";
+
 
                 //setTimeout(function() {
                     //window.location = "quiz.html";
