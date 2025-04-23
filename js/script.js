@@ -11,7 +11,7 @@ $(function () {
             console.log("form not found");
         } else {
             console.log("form found");
-            $form.on("submit", function (e) {
+            /*$form.on("submit", function (e) {
                 e.preventDefault();
                 console.log("form tiggered");
                 const userName = $("#username").val();
@@ -26,16 +26,26 @@ $(function () {
                 alert(`Welcome ${userName} to the quiz about UK.`);
                 console.log("form submited");
 
-                const baseUrl = window.location.pathname.includes('/project-quiz/') ? 
-                   '/project-quiz/' : '/';
-                window.location.href = baseUrl + "quiz.html";
-                //window.location.href = "quiz.html";
+                //const baseUrl = window.location.pathname.includes('/project-quiz/') ? 
+                   //'/project-quiz/' : '/';
+                //window.location.href = baseUrl + "quiz.html";
+                window.location.href = "quiz.html";*/
 
-
-                //setTimeout(function() {
-                    //window.location = "quiz.html";
-                //}, 500);
-            });
+                document.getElementById("form").addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    const userName = document.getElementById("username").value;
+                    if (!userName) {
+                        document.querySelector(".error").textContent = "Please enter your username.";
+                        document.querySelector(".error").style.display = "block";
+                        return;
+                    }
+                    localStorage.setItem("userName", userName);
+                    alert(`Welcome ${userName} to the quiz about UK.`);
+                    
+                    // Navigate to quiz page
+                    window.location.href = "quiz.html";
+                });
+            //});
         }
     }
     //This code is from w3schools
