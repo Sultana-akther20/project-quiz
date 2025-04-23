@@ -26,6 +26,10 @@ $(function () {
                 alert(`Welcome ${userName} to the quiz about UK.`);
                 console.log("form submited");
                 window.location.href = "quiz.html";
+
+                //setTimeout(function() {
+                    //window.location = "quiz.html";
+                //}, 500);
             });
         }
     }
