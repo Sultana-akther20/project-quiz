@@ -1,5 +1,25 @@
 # project-quiz
 [QUIZ ABOUT UK](https://sultana-akther20.github.io/project-quiz/)
+[My Website Discription](#my-website-discription)
+[Mockup](#mockup)
+[User Stories](#user-stories)
+[Design and Elements](#design-and-elements)
+[Content](#content)
+[Get Helps From](#get-helps-from)
+[Deployment](#deployment)
+[Language Used](#language-used)
+[Frameworks, Libraries and Programme Used](#frameworks-libraries-and-programme-used)
+[Target Audience](#target-audience)
+[HTML Validator](#html-validator)
+[CSS Validator](#css-validator)
+[JSHint for JavaScript](#jshint-for-javascript)
+[Lighthouse](#lighthouse)
+[Wireframe](#wireframe)
+[Test Plan](#test-plan)
+[Explanation Of The Testing](#explanation-of-the-testing)
+[Manual Testing](#manual-testing)
+[Gantt Chart](#gantt-chart)
+[ScreenShots Of The Pages](#screenshots-of-the-pages)
 
 ## Mockup
 ![Image](https://github.com/user-attachments/assets/37ec7494-d26e-44cf-b645-f9e40a935f1e)
@@ -43,10 +63,10 @@ I used form to make username and submit to play the quiz.
 ### Favicon
 I used favicon to make the logo of my website. 
 
-### Content 
+## Content 
 Content was written by me but I have got lots of ideas and helps to create this website. I have document this below and I have got instruction box idea from my mentor and used the code from w3school and changed the things related to my project. 
 
-### Get helps from
+## Get Helps From
 1. From my teacher
 2. From code institute website
 3. From mentor
@@ -55,7 +75,7 @@ Content was written by me but I have got lots of ideas and helps to create this 
 6. w3schools
 
 
-### Deployment
+## Deployment
 This project I developed using the [Gitpod](https://sultana-akther20.github.io/project-quiz/) and VS Code. I commited to git and pushed to github using the gitpod.
 I have deployed this project from [GitHub repositories](https://github.com/Sultana-akther20/project-quiz.git), selected this the repository I'm working with, then selected the setting button from the top of the page and scroll down to the Pages section. after that on this page on the Source clicked and selected Master Branch. on the same page under the branch select main from dropdown menu and selsect root then clicked save. Then the page was refresh autometically and deployed. Then retrieved the link from the github pages. 
 
@@ -65,19 +85,19 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 * Then log into Gitpod with their gitpod account and navigate to the [Project GitHub repository](https://github.com/Sultana-akther20/project-quiz.git).
 * Then they have to click the green "Gitpod" button in the top right corner of the repository and this will make a new gitpod workspace to be created from the code in github, so you can work locally.
 
-#### To work on the project within any local IDE
+### To work on the project within any local IDE
 * First they have to click this link [ Project GitHub repository](https://github.com/Sultana-akther20/project-quiz.git). Under the repository name, they have to click "Clone or download".
 * In the HTTPs section, copy the clone URL for the repository.
 * In their IDE open the terminal, then change the current working directory to the location where they want to cloned directory to be made.
 * Then type git clone and paste the URL they copied before, the project github repository one. 
 * Then press Enter and a local clone will be created for them. 
 
-### Language used
+## Language Used
 [HTML5](https://en.wikipedia.org/wiki/HTML5),
 [CSS3](https://en.wikipedia.org/wiki/CSS3),
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript),
 
-### frameworks libraries and programme used
+## Frameworks, Libraries and Programme Used
 1. [Font Awesome Kit](https://fontawesome.com/) I used this in the footer to use social media icons.
 2. [git](https://git-scm.com/) I used this to commit messages in terminal.
 3. [github](https://github.com/) I used this to create repository, links to VScode etc.
@@ -86,26 +106,26 @@ I have deployed this project from [GitHub repositories](https://github.com/Sulta
 6. [jQuery](https://jquery.com/) I used jQuery library in script.js.
 7. [favicon](https://favicon.io/) I used this to create a logo related to my website and used this in both page.
 
-### terget audience
+## Target Audience
 1. Newcommers
 2. Forigners
 3. Immigrants
 4. Future Generation
 
 
-### HTML validator
+## HTML Validator
 ![Image](https://github.com/user-attachments/assets/c82f448f-576f-48a1-a96b-c55a5fb35433)
 
 ![Image](https://github.com/user-attachments/assets/4623ebd7-d15b-46ee-bb6d-249524e8b545)
 
 ![Image](https://github.com/user-attachments/assets/043b9628-856d-463b-b33e-d0f3631a132e)
 
-### CSS validator
+## CSS Validator
 
 ![Image](https://github.com/user-attachments/assets/8e40b859-d57e-40a2-bd2d-c660a99bd5a2)
 
 
-### JSHint for JavaScript
+## JSHint for JavaScript
 I have checked JavaScript code in JSHint to validate. I checked all the button from CONFIGURE that I have used in my code. Before it was showing that some variable were not define then after checking all the buttons it defined now. 
 
 ![Image](https://github.com/user-attachments/assets/f074a69c-f66e-4b36-961c-73da46db8e51)
@@ -120,18 +140,18 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 
 ![Image](https://github.com/user-attachments/assets/7ab45af1-0ac7-44bd-ad2d-c537a595a28e)
 
-### Lighthouse
+## Lighthouse
 
 ![Image](https://github.com/user-attachments/assets/0105536b-c78f-451f-8c20-8652a893a082)
 
 ![Image](https://github.com/user-attachments/assets/5886957a-d412-4fbf-b8a3-1a57d65d672b)
 
-### Wireframe
+## Wireframe
 ![Image](https://github.com/user-attachments/assets/b18241f5-7d7a-4344-98b4-510770276c17)
 
 ![Image](https://github.com/user-attachments/assets/9c80c411-e2fb-489b-a84f-566fb30998ee)
 
-### Test Plan
+## Test Plan
 1. on the main page, should be a username and submit button to go to the quiz page.
 2. username should be requir and after clicking the submit button a message should indicate by using your username.
 3. on the main page there should be a instruction button for informatio of the quiz and button should be on click.
@@ -140,9 +160,11 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 6. after clicking the first question answer, next button will appear, otherwise next button should be hidden.
 7. after finishing all the questions a message will appear to tell you your score and restart the quiz button will display.
 
+## Explanation Of The Testing
 
-### Manual Testing
-#### Test no.1
+
+## Manual Testing
+### Test no.1
 
 * Description of the test: Make a form for username and submit buttons and it’ll indicate require.
 * Expected Outcome: Should show require username, if tehy submit empty button.
@@ -152,7 +174,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/809b95ff-0071-44dd-b043-d19e0c1aaee5)
 
-#### Test no. 2
+### Test no. 2
 
 * Description of the test: After submitting the form, it will display a message to click ok to go to the quiz page by using your username.  
 * Expected Outcome: A message will show by using your username. 
@@ -162,7 +184,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/f07d0b76-24a2-46b7-92b7-226428aa3685)
 
-#### Test no. 3
+### Test no. 3
 
 * Description of the test: After clicking ok, it will show the question rendomisely. 
 * Expected Outcome: Should randomise the question.
@@ -172,7 +194,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/0c728868-3e38-4fe3-9af3-77a857ef729d)
  
-#### Test no. 4
+### Test no. 4
 
 * Description of the test: next button should be hidden until answer is clicked.
 * Expected Outcome: next button should be hidden. 
@@ -182,7 +204,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/0c728868-3e38-4fe3-9af3-77a857ef729d)
 
-#### Test no. 5
+### Test no. 5
 
 * Description of the test: After clicking the answer, it will show the coccert answer and wrong answer by using green for correct and red for wrong. 
 * Expected Outcome: should show green for correct and red for wrong answer. 
@@ -192,7 +214,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/0e81174d-522a-4871-ab15-56c318e8a692)
 
-#### Test no. 6 
+### Test no. 6 
 
 * Description of the test: After clicking the answer next button will show to go to the nest question.
 * Expected Outcome: next button will show after clicking the answer.
@@ -202,7 +224,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/0e81174d-522a-4871-ab15-56c318e8a692)
 
-#### Test no. 7
+### Test no. 7
 
 * Description of the test: After finishing the questions, it will show the score and a message. 
 * Expected Outcome: a message should appear to show the score. 
@@ -212,7 +234,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
  ![Image](https://github.com/user-attachments/assets/27a05128-1490-4ef2-9372-96835a4f1aa9)
 
-#### Test no. 8
+### Test no. 8
 
 * Description of the test: A restart button should show to replay the quiz. 
 * Expected Outcome: restart button should show to play again.
@@ -222,7 +244,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 * Screenshot as proof:
 ![Image](https://github.com/user-attachments/assets/27a05128-1490-4ef2-9372-96835a4f1aa9)
 
-#### Test no. 9
+### Test no. 9
 
 * Description of the test: should be the internal and external links to the page. 
 * Expected Outcome: links should be in the page.
@@ -231,7 +253,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 
 * Screenshot as proof:
  
-#### Test no. 10
+### Test no. 10
 
 * Description of the test: username box should be in the middle of the page. 
 * Expected Outcome: box should be in the middle of the page.
@@ -245,7 +267,7 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 Screenshot:
 ![Image](https://github.com/user-attachments/assets/ae0e125b-a6a2-4461-ba89-dee2934e4192)
 
-#### test no. 11
+### test no. 11
 * description: I'm useing jQuery for JavaScript library.
 * Expected outcome: Jquery should be install in the project.
 * actual outcome: It showing undefined
@@ -255,7 +277,7 @@ Screenshot:
 
  ![Image](https://github.com/user-attachments/assets/c43021ac-ac35-4c02-9bb5-0ff9bc99cc56)
 
- #### test no. 12
+ ### test no. 12
 * description: I'm trying to test a function by using jest.
 * expected outcome: It should test the function
 * actual outcome: It saying the function is undefined and failing
@@ -263,7 +285,7 @@ Screenshot:
 * screenshot:
 ![Image](https://github.com/user-attachments/assets/67c2f925-77a9-497b-8294-a68cc32ab3d5)
 
-#### test no. 13
+### test no. 13
 * description: I'm testing if the website responsive of the different devices.
 * expected outcome: It should test the responsiveness of the different devices.
 * actual outcome: It works as expected.
@@ -282,14 +304,14 @@ Screenshot:
 ![Image](https://github.com/user-attachments/assets/43c9d1d4-d66f-41f0-9e0d-9aeee9506325)
 
 
-### Gantt chart
+## Gantt Chart
 
 ![Image](https://github.com/user-attachments/assets/f9fa5c31-80b5-49c9-8c45-5161a7d6bbb9)
 
 ![Image](https://github.com/user-attachments/assets/d3fc0213-dab5-4dc1-9730-d10acd187d71)
 
 
-### ScreenShots of the pages
+## ScreenShots Of The Pages
 
 ![Image](https://github.com/user-attachments/assets/3b5f9916-87e7-4f4d-893a-65376489eb57)
 
