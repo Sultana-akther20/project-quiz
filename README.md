@@ -1,25 +1,25 @@
 # project-quiz
-[QUIZ ABOUT UK](https://sultana-akther20.github.io/project-quiz/)
-[My Website Discription](#my-website-discription)
-[Mockup](#mockup)
-[User Stories](#user-stories)
-[Design and Elements](#design-and-elements)
-[Content](#content)
-[Get Helps From](#get-helps-from)
-[Deployment](#deployment)
-[Language Used](#language-used)
-[Frameworks, Libraries and Programme Used](#frameworks-libraries-and-programme-used)
-[Target Audience](#target-audience)
-[HTML Validator](#html-validator)
-[CSS Validator](#css-validator)
-[JSHint for JavaScript](#jshint-for-javascript)
-[Lighthouse](#lighthouse)
-[Wireframe](#wireframe)
-[Test Plan](#test-plan)
-[Explanation Of The Testing](#explanation-of-the-testing)
-[Manual Testing](#manual-testing)
-[Gantt Chart](#gantt-chart)
-[ScreenShots Of The Pages](#screenshots-of-the-pages)
+* [QUIZ ABOUT UK](https://sultana-akther20.github.io/project-quiz/)
+* [My Website Discription](#my-website-discription)
+* [Mockup](#mockup)
+* [User Stories](#user-stories)
+* [Design and Elements](#design-and-elements)
+* [Content](#content)
+* [Get Helps From](#get-helps-from)
+* [Deployment](#deployment)
+* [Language Used](#language-used)
+* [Frameworks, Libraries and Programme Used](#frameworks-libraries-and-programme-used)
+* [Target Audience](#target-audience)
+* [HTML Validator](#html-validator)
+* [CSS Validator](#css-validator)
+* [JSHint for JavaScript](#jshint-for-javascript)
+* [Lighthouse](#lighthouse)
+* [Wireframe](#wireframe)
+* [Test Plan](#test-plan)
+* [Explanation Of The Testing](#explanation-of-the-testing)
+* [Manual Testing](#manual-testing)
+* [Gantt Chart](#gantt-chart)
+* [ScreenShots Of The Pages](#screenshots-of-the-pages)
 
 ## Mockup
 ![Image](https://github.com/user-attachments/assets/37ec7494-d26e-44cf-b645-f9e40a935f1e)
@@ -161,10 +161,16 @@ I have checked JavaScript code in JSHint to validate. I checked all the button f
 7. after finishing all the questions a message will appear to tell you your score and restart the quiz button will display.
 
 ## Explanation Of The Testing
-
+Manual testing means all the testing from the project been tested without any automation tools. I have tested my project by manually like: I used test discription, expected outcome, actual outcome, error status, screenshots for the test. By doing this test helped me identify the UI/UX issues and helped me to test the elements and design across different devices.
+In automated testing: By using this test it runs the tests repeatedly without manual effort and it is faster. I tried to test autometed testing by using Jest and I wrote some code to test a function that test autometically but found challenges with function definition identification (see test no. 12), this area I plan to enhance in future projects.
+### differences between these tests are below:
+* Manual testing performed by human and Autometed testing excuted by tools.
+* Manual testing takes more time and automated testing faster execution once set up.
+* For the reliability it based on tester and autometed testing based on consistent results.
+* Manual testing is flexible to adapt to change requirements quickly and automated testing requires updates to test scripts when requirments change etc.
 
 ## Manual Testing
-### Test no.1
+### Test no. 1
 
 * Description of the test: Make a form for username and submit buttons and it’ll indicate require.
 * Expected Outcome: Should show require username, if tehy submit empty button.
