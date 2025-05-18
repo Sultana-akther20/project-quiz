@@ -1,6 +1,6 @@
 # project-quiz
 * [QUIZ ABOUT UK](https://sultana-akther20.github.io/project-quiz/)
-* [My Website Discription](#my-website-discription)
+* [My Website Description](#my-website-discription)
 * [Mockup](#mockup)
 * [User Stories](#user-stories)
 * [Design and Elements](#design-and-elements)
@@ -24,7 +24,7 @@
 ## Mockup
 ![Image](https://github.com/user-attachments/assets/37ec7494-d26e-44cf-b645-f9e40a935f1e)
 
-## My Website Discription
+## My Website Description
 This website is about a quiz, related to the UK. The goals and purposes are to provide users to learn about UK, history and get a general knowledge. If anyone wants to know about UK to get a general knowledge, wants to move to the UK and wants to get a settelment visa etc. So they can use this. I have made the question randomise, so users can't copy others. To play this quiz, user have to make a username and then submit it. After it will show user a message by using their username if they wants to go to the quiz page, then they need to click ok. Then in quiz page there will be link for quiz section to go to the quiz or user can scroll down. The next button won't be apear until they click the answer for the first question. Then it will show them in green for correct answer and red for wrong answer and next button will appear on the screen to go to the next question. After finishing all the questions, it will show them the score they have got out of 10 and restart button will show to play again. If they want to play again then click the restart button.
 
 ## User Stories
